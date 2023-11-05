@@ -14,7 +14,7 @@ Publications
 ======
 <div style="display: flex;">
     <div style="flex: 1; padding: 10px;">
-        <img src="paper1.png" alt="Publication Image" width="100">
+        <img src="https://github.com/ShaoXiang23/ShaoXiang23.github.io/blob/master/images/paper1.png" alt="Publication Image" width="100">
     </div>
     <div style="flex: 3; padding: 10px;">
         <h3>Title of Paper</h3>
