@@ -12,14 +12,32 @@ This is the front page of a website that is powered by the [academicpages templa
 
 Publications
 ======
-<table style="width:100%;border-collapse:collapse;margin-right:auto;margin-left:auto;padding-top:10px;">
+<table style="width:100%;border-collapse:collapse;border:none;margin-right:auto;margin-left:auto;padding-top:10px;">
     <tbody> 
         <tr>
-            <td style="padding:10px;"><i class="fa fa-calendar" aria-hidden="true"></i><b>First Author</b></td>
+            <td style="padding:10px;"><b>First Author</b></td>
         </tr>
         <tr>
             <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
-                <img src='images/paper1.png' width="170">
+                <img src='images/paper3.png' width="170">
+            </td>
+            <td valign="middle">
+                <p>
+                    <a href="">
+                        <papertitle>CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting</papertitle>
+                    </a>
+                    <br>
+                    <b>Shaoxiang Guo</b>, Qing Cai, Lin Qi and Junyu Dong.
+                    <br>
+                    Proceedings of the 31st ACM International Conference on Multimedia (ACM MM), 2023.  
+                    <br>
+                    <a href="">[Code]</a>               
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                <img src='images/paper2.png' width="170">
             </td>
             <td valign="middle">
                 <p>
@@ -37,7 +55,7 @@ Publications
         </tr>
         <tr>
             <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
-                <img src='images/paper2.png' width="170">
+                <img src='images/paper1.png' width="170">
             </td>
             <td valign="middle">
                 <p>
@@ -55,4 +73,5 @@ Publications
         </tr>
     </tbody>
 </table>
+
 
