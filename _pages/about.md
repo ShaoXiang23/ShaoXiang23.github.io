@@ -12,11 +12,11 @@ This is the front page of a website that is powered by the [academicpages templa
 
 Publications
 ======
-![Publication Image](https://github.com/ShaoXiang23/ShaoXiang23.github.io/blob/master/images/paper1.png)
-**Title**: Title of Paper
-**Publication**: Name of Publication
-**Date**: Publication Date
-**Authors**: Author 1, Author 2
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CSVT 2021</div><img src='images/paper1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+Graph-Based CNNs With Self-Supervised Module for 3D Hand Pose Estimation From Monocular RGB
+
+**Shaoxiang Guo**, Jiaxin Chen, Di Huang, Yunhong Yang
 
 
 Getting started
