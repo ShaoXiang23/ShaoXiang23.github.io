@@ -153,15 +153,15 @@ Publications
 
 Honors and Awards
 =================
+- National Scholarship (PhD), Ministry of Education of the People's Republic of China, 2022
 - Academic Scholarship, Ocean University of China, 2020-2023
 - LEICE Chuangxin "Minzhi" Scholarship, Ocean University of China, 2023
 - Outstanding Graduate Student, Ocean University of China, 2023
-- National Scholarship (PhD), Ministry of Education of the People's Republic of China, 2022
 - Outstanding Graduate Student, Ocean University of China, 2021
 - Internet+ Innovation and Entrepreneurship Competition, Second Prize, Ocean University of China, 2021
 
 Educations
 ==========
-- Bachelor's Degree, Software Engineering, School of Information Science and Engineering, Qufu Normal University, 2013-2017
-- Master's Degree, Software Engineering, School of Information Science and Engineering, Ocean University of China, 2017-2020
 - PhD Candidate, Computer Application Technology, Faculty of Information Science and Engineering, Ocean University of China, 2020-present
+- Master's Degree, Software Engineering, School of Information Science and Engineering, Ocean University of China, 2017-2020
+- Bachelor's Degree, Software Engineering, School of Information Science and Engineering, Qufu Normal University, 2013-2017
