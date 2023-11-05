@@ -26,7 +26,7 @@ Publications
             </td>
             <td valign="middle">
                 <p>
-                    <a href="">
+                    <a href="https://dl.acm.org/doi/10.1145/3581783.3612390">
                         <papertitle>CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting</papertitle>
                     </a>
                     <br>
@@ -48,7 +48,7 @@ Publications
             </td>
             <td valign="middle">
                 <p>
-                    <a href="">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9680673/">
                         <papertitle>3D Hand Pose Estimation From Monocular RGB With Feature Interaction Module</papertitle>
                     </a>
                     <br>
@@ -70,7 +70,7 @@ Publications
             </td>
             <td valign="middle">
                 <p>
-                    <a href="">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9680673/">
                         <papertitle>Graph-Based CNNs With Self-Supervised Module for 3D Hand Pose Estimation From Monocular RGB</papertitle>
                     </a>
                     <br>
@@ -92,7 +92,7 @@ Publications
             </td>
             <td valign="middle">
                 <p>
-                    <a href="">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9950355">
                         <papertitle>Transmittance Surface Detection and Material Identification Using Multitask ViT-SIFT Fusion</papertitle>
                     </a>
                     <br>
@@ -114,7 +114,7 @@ Publications
             </td>
             <td valign="middle">
                 <p>
-                    <a href="">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9481150">
                         <papertitle>Incorporating lambertian priors into surface normals measurement</papertitle>
                     </a>
                     <br>
@@ -136,7 +136,7 @@ Publications
             </td>
             <td valign="middle">
                 <p>
-                    <a href="">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9886734">
                         <papertitle>An Encoder-Decoder Network with Residual and Attention Blocks for Full-Face 3D Gaze Estimation</papertitle>
                     </a>
                     <br>
