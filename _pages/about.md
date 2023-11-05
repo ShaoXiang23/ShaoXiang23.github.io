@@ -12,17 +12,11 @@ This is the front page of a website that is powered by the [academicpages templa
 
 Publications
 ======
-<div style="display: flex;">
-    <div style="flex: 1; padding: 10px;">
-        <img src="https://github.com/ShaoXiang23/ShaoXiang23.github.io/blob/master/images/paper1.png" alt="Publication Image" width="100">
-    </div>
-    <div style="flex: 3; padding: 10px;">
-        <h3>Title of Paper</h3>
-        <p>Publication: Name of Publication</p>
-        <p>Date: Publication Date</p>
-        <p>Authors: Author 1, Author 2, Author 3</p>
-    </div>
-</div>
+![Publication Image](https://github.com/ShaoXiang23/ShaoXiang23.github.io/blob/master/images/paper1.png)
+**Title**: Title of Paper
+**Publication**: Name of Publication
+**Date**: Publication Date
+**Authors**: Author 1, Author 2
 
 
 Getting started
