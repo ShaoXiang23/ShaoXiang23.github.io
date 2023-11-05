@@ -14,14 +14,7 @@ Currently, I am pursuing a PhD degree in Engineering, specializing in Computer A
 - Hand Shape Reconstruction
 - Corresponding Applications 
 
-I am also a member of the robotics research group in OUC Vision Lab, and my project development experience includes:
-- Gait Recognition
-- Emotion Recognition
-- Gaze Estimation 
-- ROS-based Robotics Development
-- Binocular Stereo Matching
-- Underwater Vision
-- 3D Reconstruction
+I am also a member of the robotics research group in OUC Vision Lab, and my project development experience includes: Gait Recognition, Emotion Recognition, Gaze Estimation, ROS-based Robotics Development, Binocular Stereo Matching, Underwater Vision and 3D Reconstruction.
 
 Publications
 ============
