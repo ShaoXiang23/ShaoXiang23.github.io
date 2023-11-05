@@ -157,6 +157,7 @@ Publications
 </table>
 
 Honors and Awards
+
 - Academic Scholarship, Ocean University of China, 2020-2023
 - LEICE Chuangxin "Minzhi" Scholarship, Ocean University of China, 2023
 - Outstanding Graduate Student, Ocean University of China, 2023
