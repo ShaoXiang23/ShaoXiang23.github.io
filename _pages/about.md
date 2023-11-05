@@ -18,10 +18,9 @@ Publications
     </div>
     <div style="flex: 3; padding: 10px;">
         <h3>Title of Paper</h3>
-        <p><strong>Publication:</strong> Name of Publication</p>
-        <p><strong>Date:</strong> Publication Date</p>
-        <p><strong>Authors:</strong> Author 1, Author 2, Author 3</p>
-        <p><strong>Citation:</strong> Number of Citations</p>
+        <p>Publication: Name of Publication</p>
+        <p>Date: Publication Date</p>
+        <p>Authors: Author 1, Author 2, Author 3</p>
     </div>
 </div>
 
