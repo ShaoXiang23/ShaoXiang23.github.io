@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Daniel Guo's personal academic home page"
+title: "Daniel Guo's home page"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -32,6 +32,10 @@ Publications
                 </p>
             </td>
         </tr>
+    </tbody>
+</table>
+<table style="width:100%;border-collapse:collapse;border:none;margin-right:auto;margin-left:auto;padding-top:10px;">
+    <tbody> 
         <tr>
             <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
                 <img src='images/paper2.png' width="170">
@@ -50,6 +54,10 @@ Publications
                 </p>
             </td>
         </tr>
+    </tbody>
+</table>
+<table style="width:100%;border-collapse:collapse;border:none;margin-right:auto;margin-left:auto;padding-top:10px;">
+    <tbody> 
         <tr>
             <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
                 <img src='images/paper1.png' width="170">
