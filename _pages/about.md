@@ -12,21 +12,45 @@ This is the front page of a website that is powered by the [academicpages templa
 
 Publications
 ======
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CSVT 2022</div><img src='https://github.com/ShaoXiang23/ShaoXiang23.github.io/tree/master/images/paper1.jpg' alt="sym" width="25%"></div></div>
-<div class='paper-box-text' markdown="1">
-3D Hand Pose Estimation From Monocular RGB With Feature Interaction Module
-
-**Shaoxiang Guo**, Eric Rigall, Yakun Ju, Junyu Dong.
-
-IEEE Transactions on Circuits and Systems for Video Technology.
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CSVT 2021</div><img src='https://github.com/ShaoXiang23/ShaoXiang23.github.io/tree/master/images/paper1.jpg' alt="sym" width="25%"></div></div>
-<div class='paper-box-text' markdown="1">
-Graph-Based CNNs With Self-Supervised Module for 3D Hand Pose Estimation From Monocular RGB
-
-**Shaoxiang Guo**, Eric Rigall, Lin Qi, Xinghui Dong, Haiyan Li and Junyu Dong.
-
-IEEE Transactions on Circuits and Systems for Video Technology.
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-top:10px;"><tbody> 
+<tr>
+<tr><td style="padding:10px;"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<b>2023</b></td></tr>
+<tr>
+    <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+        <img src='images/paper1.jpg' width="170"></div>
+            </td>
+    <td valign="middle">
+        <p>
+        <a href="">
+            <papertitle>3D Hand Pose Estimation From Monocular RGB With Feature Interaction Module</papertitle>
+        </a>
+        <br>
+        <b>Shaoxiang Guo</b>, Eric Rigall, Yakun Ju, Junyu Dong.
+        <br>
+        IEEE Transactions on Circuits and Systems for Video Technology. (IEEE T-CSVT), 2022.  
+        <br>
+        <a href="">[Code]</a>               
+        <br>
+    </td>
+</tr>
+<tr>
+    <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+        <img src='images/paper2.jpg' width="170"></div>
+            </td>
+    <td valign="middle">
+        <p>
+        <a href="">
+            <papertitle>Graph-Based CNNs With Self-Supervised Module for 3D Hand Pose Estimation From Monocular RGB</papertitle>
+        </a>
+        <br>
+        <b>Shaoxiang Guo</b>, Eric Rigall, Lin Qi, Xinghui Dong, Haiyan Li and Junyu Dong.
+        <br>
+        IEEE Transactions on Circuits and Systems for Video Technology. (IEEE T-CSVT), 2021.  
+        <br>
+        <a href="">[Code]</a>               
+        <br>
+    </td>
+</tr>
 
 
 Getting started
