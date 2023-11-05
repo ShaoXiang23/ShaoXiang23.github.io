@@ -18,7 +18,7 @@ Publications
             <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
                 <img src='images/paper3.png' width="170">
             </td>
-            <td valign="middle">
+            <!-- <td valign="middle"> -->
                 <p>
                     <a href="">
                         <papertitle>CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting</papertitle>
@@ -36,7 +36,7 @@ Publications
             <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
                 <img src='images/paper2.png' width="170">
             </td>
-            <td valign="middle">
+            <!-- <td valign="middle"> -->
                 <p>
                     <a href="">
                         <papertitle>3D Hand Pose Estimation From Monocular RGB With Feature Interaction Module</papertitle>
@@ -54,7 +54,7 @@ Publications
             <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
                 <img src='images/paper1.png' width="170">
             </td>
-            <td valign="middle">
+            <!-- <td valign="middle"> -->
                 <p>
                     <a href="">
                         <papertitle>Graph-Based CNNs With Self-Supervised Module for 3D Hand Pose Estimation From Monocular RGB</papertitle>
