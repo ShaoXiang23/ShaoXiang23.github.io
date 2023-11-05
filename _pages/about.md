@@ -17,7 +17,7 @@ Publications
 <tr><td style="padding:10px;"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<b>2023</b></td></tr>
 <tr>
     <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
-        <img src='images/paper1.jpg' width="170"></div>
+        <img src='images/paper1.png' width="170"></div>
             </td>
     <td valign="middle">
         <p>
@@ -35,7 +35,7 @@ Publications
 </tr>
 <tr>
     <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
-        <img src='images/paper2.jpg' width="170"></div>
+        <img src='images/paper2.png' width="170"></div>
             </td>
     <td valign="middle">
         <p>
