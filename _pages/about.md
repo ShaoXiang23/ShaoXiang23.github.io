@@ -78,5 +78,49 @@ Publications
         </tr>
     </tbody>
 </table>
+<table style="width:100%;border-collapse:collapse;border:none;margin-right:auto;margin-left:auto;padding-top:10px;">
+    <tbody> 
+        <tr>
+            <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                <img src='images/paper4.png' width="170">
+            </td>
+            <td valign="middle">
+                <p>
+                    <a href="">
+                        <papertitle>Transmittance Surface Detection and Material Identification Using Multitask ViT-SIFT Fusion</papertitle>
+                    </a>
+                    <br>
+                    Amanuel Hirpa Madessa, Junyu Dong, Eric Rigall, Qingxuan Lv, Hafiza Sadia Nawaz Nawaz, Israel Mugunga and <b>Shaoxiang Guo</b>.
+                    <br>
+                    IEEE Transactions on Instrumentation and Measurement (IEEE T-IM), 2022.  
+                    <br>
+                    <a href="">[Code]</a>               
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table style="width:100%;border-collapse:collapse;border:none;margin-right:auto;margin-left:auto;padding-top:10px;">
+    <tbody> 
+        <tr>
+            <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
+                <img src='images/paper5.png' width="170">
+            </td>
+            <td valign="middle">
+                <p>
+                    <a href="">
+                        <papertitle>Incorporating lambertian priors into surface normals measurement</papertitle>
+                    </a>
+                    <br>
+                    Yakun Ju, Muwei Jian, <b>Shaoxiang Guo</b>, Yingyu Wang, Huiyu Zhou, Junyu Dong
+                    <br>
+                    IEEE Transactions on Instrumentation and Measurement (IEEE T-IM), 2021.  
+                    <br>
+                    <a href="">[Code]</a>               
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 
