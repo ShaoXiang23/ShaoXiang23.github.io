@@ -12,10 +12,10 @@ This is the front page of a website that is powered by the [academicpages templa
 
 Publications
 ======
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-top:10px;">
+<table style="width:100%;border-collapse:collapse;margin-right:auto;margin-left:auto;padding-top:10px;">
     <tbody> 
         <tr>
-            <td style="padding:10px;"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<b>2019-</b></td>
+            <td style="padding:10px;"><i class="fa fa-calendar" aria-hidden="true"></i><b>First Author</b></td>
         </tr>
         <tr>
             <td style="padding:10px;width:30%;vertical-align:middle;text-align:center;">
@@ -55,3 +55,4 @@ Publications
         </tr>
     </tbody>
 </table>
+
