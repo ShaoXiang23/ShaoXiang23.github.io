@@ -32,9 +32,9 @@ Publications
                     <br>
                     <b>Shaoxiang Guo</b>, Qing Cai, Lin Qi and Junyu Dong.
                     <br>
-                    Proceedings of the 31st ACM International Conference on Multimedia (ACM MM), 2023.  
+                    Proceedings of the 31st ACM International Conference on Multimedia (<b>ACM MM</b>), 2023.  
                     <br>
-                    <a href="">[Code]</a>               
+                    <a href="https://github.com/ShaoXiang23/CLIP_Hand_Demo">[Code]</a>               
                 </p>
             </td>
         </tr>
@@ -54,7 +54,7 @@ Publications
                     <br>
                     <b>Shaoxiang Guo</b>, Eric Rigall, Yakun Ju, Junyu Dong.
                     <br>
-                    IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT), 2022.  
+                    IEEE Transactions on Circuits and Systems for Video Technology (<b>IEEE T-CSVT</b>), 2022.  
                     <br>
                     <a href="">[Code]</a>               
                 </p>
@@ -76,7 +76,7 @@ Publications
                     <br>
                     <b>Shaoxiang Guo</b>, Eric Rigall, Lin Qi, Xinghui Dong, Haiyan Li and Junyu Dong.
                     <br>
-                    IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT), 2021.  
+                    IEEE Transactions on Circuits and Systems for Video Technology (<b>IEEE T-CSVT</b>), 2021.  
                     <br>
                     <!-- <a href="">[Code]</a>                -->
                 </p>
@@ -98,7 +98,7 @@ Publications
                     <br>
                     Amanuel Hirpa Madessa, Junyu Dong, Eric Rigall, Qingxuan Lv, Hafiza Sadia Nawaz Nawaz, Israel Mugunga and <b>Shaoxiang Guo</b>.
                     <br>
-                    IEEE Transactions on Instrumentation and Measurement (IEEE T-IM), 2022.  
+                    IEEE Transactions on Instrumentation and Measurement (<b>IEEE T-IM</b>), 2022.  
                     <br>
                     <!-- <a href="">[Code]</a>                -->
                 </p>
@@ -120,7 +120,7 @@ Publications
                     <br>
                     Yakun Ju, Muwei Jian, <b>Shaoxiang Guo</b>, Yingyu Wang, Huiyu Zhou, Junyu Dong
                     <br>
-                    IEEE Transactions on Instrumentation and Measurement (IEEE T-IM), 2021.  
+                    IEEE Transactions on Instrumentation and Measurement (<b>IEEE T-IM</b>), 2021.  
                     <br>
                     <!-- <a href="">[Code]</a>                -->
                 </p>
@@ -142,7 +142,7 @@ Publications
                     <br>
                     Xinyuan Song, <b>Shaoxiang Guo</b>, Zhenfu Yu and Junyu Dong
                     <br>
-                    International Conference on Image, Vision and Computing (ICIVC), 2022.  
+                    International Conference on Image, Vision and Computing (<b>ICIVC</b>), 2022.  
                     <br>
                     <!-- <a href="">[Code]</a>                -->
                 </p>
