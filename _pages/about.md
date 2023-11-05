@@ -13,6 +13,7 @@ Currently, I am pursuing a PhD degree in Engineering, specializing in Computer A
 - Hand Pose Estimation
 - Hand Shape Reconstruction
 - Corresponding Applications 
+
 I am also a member of the robotics research group in OUC Vision Lab, and my project development experience includes:
 - Gait Recognition
 - Emotion Recognition
@@ -23,6 +24,7 @@ I am also a member of the robotics research group in OUC Vision Lab, and my proj
 - 3D Reconstruction
 
 Publications
+============
 <table style="width:100%;border-collapse:collapse;border:none;margin-right:auto;margin-left:auto;padding-top:10px;">
     <tbody> 
         <tr>
@@ -157,10 +159,16 @@ Publications
 </table>
 
 Honors and Awards
-
+=================
 - Academic Scholarship, Ocean University of China, 2020-2023
 - LEICE Chuangxin "Minzhi" Scholarship, Ocean University of China, 2023
 - Outstanding Graduate Student, Ocean University of China, 2023
 - National Scholarship (PhD), Ministry of Education of the People's Republic of China, 2022
 - Outstanding Graduate Student, Ocean University of China, 2021
 - Internet+ Innovation and Entrepreneurship Competition, Second Prize, Ocean University of China, 2021
+
+Educations
+==========
+- Bachelor's Degree, Software Engineering, School of Information Science and Engineering, Qufu Normal University, 2013-2017
+- Master's Degree, Software Engineering, School of Information Science and Engineering, Ocean University of China, 2017-2020
+- PhD Candidate, Computer Application Technology, Faculty of Information Science and Engineering, Ocean University of China, 2020-present
