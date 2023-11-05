@@ -9,11 +9,20 @@ redirect_from:
 ---
 
 Hello, welcome to Daniel Guo's homepage. 
-Currently, I am pursuing a PhD degree in Engineering, specializing in Computer Application Technology, in the Department of Information Science and Engineering at Ocean University of China. My advisor is Prof. Junyu Dong. My current research interests are Hand Image Understanding, including Hand Pose Estimation, Hand Shape Reconstruction, and the corresponding applications. 
-I am also a member of the robotics research group in OUC Vision Lab, and my project development experience includes gait recognition, expression recognition, gaze estimation, ROS-based robotics research, binocular stereo matching, underwater vision, and 3D reconstruction.
+Currently, I am pursuing a PhD degree in Engineering, specializing in Computer Application Technology, in the Department of Information Science and Engineering at Ocean University of China. My advisor is Prof. Junyu Dong. My current research interests are Hand Image Understanding, including:
+- Hand Pose Estimation
+- Hand Shape Reconstruction
+- Corresponding Applications 
+I am also a member of the robotics research group in OUC Vision Lab, and my project development experience includes:
+- Gait Recognition
+- Emotion Recognition
+- Gaze Estimation 
+- ROS-based Robotics Development
+- Binocular Stereo Matching
+- Underwater Vision
+- 3D Reconstruction
 
 Publications
-======
 <table style="width:100%;border-collapse:collapse;border:none;margin-right:auto;margin-left:auto;padding-top:10px;">
     <tbody> 
         <tr>
@@ -147,4 +156,10 @@ Publications
     </tbody>
 </table>
 
-
+Honors and Awards
+- Academic Scholarship, Ocean University of China, 2020-2023
+- LEICE Chuangxin "Minzhi" Scholarship, Ocean University of China, 2023
+- Outstanding Graduate Student, Ocean University of China, 2023
+- National Scholarship (PhD), Ministry of Education of the People's Republic of China, 2022
+- Outstanding Graduate Student, Ocean University of China, 2021
+- Internet+ Innovation and Entrepreneurship Competition, Second Prize, Ocean University of China, 2021
