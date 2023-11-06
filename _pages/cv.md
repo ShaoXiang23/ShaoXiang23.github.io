@@ -8,9 +8,6 @@ homepage:
   url: http://cs.cmu.edu/~woden
   text: cs.cmu.edu/~woden
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
 ---
 
 # Wode **Ni**
