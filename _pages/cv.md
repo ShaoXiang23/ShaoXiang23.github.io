@@ -1,10 +1,12 @@
 ---
-layout: archive
-title: "CV"
-permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+layout: cv
+title: Wode "Nimo" Ni
+email:
+  url: mailto:woden@cs.cmu.edu
+  text: woden@cs.cmu.edu
+homepage:
+  url: http://cs.cmu.edu/~woden
+  text: cs.cmu.edu/~woden
 ---
 
 {% include base_path %}
