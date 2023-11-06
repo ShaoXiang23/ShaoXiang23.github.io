@@ -153,12 +153,15 @@ Publications
 
 Honors and Awards
 =================
-- National Scholarship (PhD), Ministry of Education of the People's Republic of China, 2022
+- National Scholarship (PhD), Ocean University of China & Ministry of Education of the People's Republic of China, 2022
 - Academic Scholarship, Ocean University of China, 2020-2023
 - LEICE Chuangxin "Minzhi" Scholarship, Ocean University of China, 2023
-- Outstanding Graduate Student, Ocean University of China, 2023
-- Outstanding Graduate Student, Ocean University of China, 2021
-- Internet+ Innovation and Entrepreneurship Competition, Second Prize, Ocean University of China, 2021
+- Excellent Graduate Student, Ocean University of China, 2023
+- Excellent Graduate Student, Ocean University of China, 2021
+- "Internet+" Innovation and Entrepreneurship Competition, Second Prize, Ocean University of China, 2021
+- Second Class Academic Scholarship, Ocean University of China, 2018-2019
+- Mobile Robotics Challenge, First Prize, ROS Summer School, Tsinghua University (Shenzhen), 2018
+- LiDAR Recognition Challenge, Second Prize, ROS Summer School, Tsinghua University (Shenzhen), 2018
 
 Educations
 ==========
