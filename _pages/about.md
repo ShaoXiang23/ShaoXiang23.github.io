@@ -12,15 +12,14 @@ redirect_from:
 
 Hello, welcome to **Shaoxiang Guo's** homepage.
 
-I received my **Ph.D.** degree (Computer Application Technology) from **Ocean University of China (OUC)** in 2024.  
-I am currently a **Postdoctoral Researcher** at **Zhejiang University** (College of Information Science and Electronic Engineering), working with **Prof. Susanto Rahardja**. Previously, I was a **Postdoctoral Research Associate** at the **National Robotarium** (Heriot-Watt University & University of Edinburgh), where I contributed to an **EPSRC-funded** project on data-driven **laser resonator alignment**.
+I received my **Ph.D.** degree (Computer Application Technology) from **Ocean University of China (OUC)** in 2024, supervised by Prof. Junyu Dong. I am currently a **Postdoctoral Researcher** at **Zhejiang University**. Previously, I was a **Postdoctoral Research Associate** at the **National Robotarium** (Heriot-Watt University & University of Edinburgh), where I contributed to an **EPSRC-funded** project on data-driven **laser resonator alignment**.
 
 My research interests broadly include computer vision, machine learning, deep learning, and geometry-aware representation learning, with a focus on:
 
-- **Monocular 3D hand pose/mesh reconstruction** (camera-space reconstruction, ambiguity mitigation)
-- **Geometry-guided learning** (e.g., training-time pseudo-stereo supervision; cross-attention fusion)
-- **Beam image understanding for optical alignment** (dataset construction; coarse-to-fine prediction; real-world deployment)
-- *(Recently exploring)* **speaker diarization** and audio representation learning
+- **Monocular 3D hand pose/mesh reconstruction** 
+- **Geometry-guided learning** 
+- **Beam image understanding for optical alignment** 
+- *(Recently exploring)* **speaker diarization** 
 
 ---
 
