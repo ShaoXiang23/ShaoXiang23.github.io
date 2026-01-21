@@ -81,9 +81,9 @@ analytics:
 # Site Author
 author:
   name             : "Daniel Guo (郭少翔)"
-  avatar           : "wechat.png"
-  bio              : "Hello, I am Shaoxiang Guo. I am a Postdoctoral Researcher at Zhejiang University. I received my Ph.D. from Ocean University of China in 2024, supervised by Prof. Junyu Dong. Previously, I was a Postdoctoral Research Associate at the National Robotarium (Heriot-Watt University & the University of Edinburgh), where I contributed to an EPSRC-funded project on data-driven laser resonator alignment and beam-profile image datasets. My research interests include monocular 3D hand pose/mesh reconstruction, geometry-aware representation learning, and vision + physics-informed learning for real-world systems."
-  location         : "Zibo, China."
+  avatar           : "wechat1.png"
+  bio              : "Hello, I am Shaoxiang Guo. I am a Postdoctoral Researcher at Zhejiang University. I received my Ph.D. from Ocean University of China in 2024. I was a Postdoctoral Research Associate at the National Robotarium, where I contributed to an EPSRC-funded project. My research interests include monocular 3D hand pose/mesh reconstruction, geometry-aware representation learning, and vision + physics-informed learning for real-world systems."
+  location         : "Edinburgh, Scotland, UK."
   employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=dtqh5RQAAAAJ&hl=en&oi=ao"
