@@ -12,14 +12,15 @@ redirect_from:
 
 Hello, welcome to **Shaoxiang Guo's** homepage.
 
-I received my **Ph.D.** degree (Computer Application Technology) from **Ocean University of China (OUC)** in 2024, supervised by Prof. Junyu Dong. I am currently a **Postdoctoral Researcher** at **Zhejiang University**. Previously, I was a **Postdoctoral Research Associate** at the **National Robotarium** (Heriot-Watt University & University of Edinburgh), where I contributed to an **EPSRC-funded** project on data-driven **laser resonator alignment**.
+I received my **Ph.D.** degree (Computer Application Technology) from **Ocean University of China (OUC)** in 2024.  
+I am currently a **Postdoctoral Researcher** at **Zhejiang University** (College of Information Science and Electronic Engineering), working with **Prof. Susanto Rahardja**. Previously, I was a **Postdoctoral Research Associate** at the **National Robotarium** (Heriot-Watt University & University of Edinburgh), where I contributed to an **EPSRC-funded** project on data-driven **laser resonator alignment**.
 
 My research interests broadly include computer vision, machine learning, deep learning, and geometry-aware representation learning, with a focus on:
 
-- **Monocular 3D hand pose/mesh reconstruction** 
-- **Geometry-guided learning** 
-- **Beam image understanding for optical alignment** 
-- *(Recently exploring)* **speaker diarization** 
+- **Monocular 3D hand pose/mesh reconstruction** (camera-space reconstruction, ambiguity mitigation)
+- **Geometry-guided learning** (e.g., training-time pseudo-stereo supervision; cross-attention fusion)
+- **Beam image understanding for optical alignment** (dataset construction; coarse-to-fine prediction; real-world deployment)
+- *(Recently exploring)* **speaker diarization** and audio representation learning
 
 ---
 
@@ -44,158 +45,61 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ## Publications
 
-<!--
-Style notes:
-- Consistent spacing: margin-bottom controls vertical gap between entries.
-- Fixed column widths keep image/text aligned.
-- You can replace image paths later; hyperlinks are preserved as-is.
--->
+<p><b>Notes:</b> First author*; Co-author#.</p>
 
-<table style="width:100%;border-collapse:separate;border-spacing:0 12px;">
-  <tbody>
+<ul>
 
-    <!-- ===================== New / Recent ===================== -->
-    <tr>
-      <td style="width:190px;vertical-align:middle;text-align:center;padding:10px 14px;">
-        <img src="images/paper_pr_laser.png" width="170" style="display:block;border-radius:6px;">
-      </td>
-      <td style="vertical-align:middle;padding:6px 10px;">
-        <div style="line-height:1.45;">
-          <papertitle>A Two-Stage Learning Framework with a Beam Dataset for Automatic Laser Resonator Alignment</papertitle><br>
-          <b>Shaoxiang Guo</b>, Donald Risbridger, Richard Carter, Xianwen Kong, Daniel Esser, Mike Chantler, Mustafa Suphi Erden.<br>
-          <i>Pattern Recognition</i>, 2026.<br>
-          <!-- <a href="">[PDF]</a> <a href="">[Code]</a> <a href="">[Dataset]</a> -->
-        </div>
-      </td>
-    </tr>
+  <li>
+    <b>Shaoxiang Guo</b>* , Donald Risbridger* , Richard Carter, Xianwen Kong, Daniel Esser, Mike Chantler, Mustafa Suphi Erden.<br>
+    “A Two-Stage Learning Framework with a Beam Dataset for Automatic Laser Resonator Alignment.”<br>
+    <b>Pattern Recognition</b>, <b>2026</b>. (SCI Q1, Top, Latest IF=7.6)
+    <!-- <a href="">[PDF]</a> <a href="">[Code]</a> <a href="">[Dataset]</a> -->
+  </li>
 
-    <tr>
-      <td style="width:190px;vertical-align:middle;text-align:center;padding:10px 14px;">
-        <img src="images/paper_kbs_hand.png" width="170" style="display:block;border-radius:6px;">
-      </td>
-      <td style="vertical-align:middle;padding:6px 10px;">
-        <div style="line-height:1.45;">
-          <papertitle>Pseudo Stereo for Camera-Space Hand Pose and Shape Estimation from Monocular Image</papertitle><br>
-          <b>Shaoxiang Guo</b>, Qing Cai, Wankun Chen, Jingyi Sun, Junyu Dong, Hui Yu.<br>
-          <i>Knowledge-Based Systems</i>, 2025. (In Revision)<br>
-          <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
-        </div>
-      </td>
-    </tr>
+  <li>
+    <b>Shaoxiang Guo</b>* , Qing Cai, Wankun Chen, Jingyi Sun, Junyu Dong, Hui Yu.<br>
+    “Pseudo Stereo for Camera Space Hand Pose and Shape Estimation from Monocular Image.”<br>
+    <b>Knowledge-Based Systems (KBS)</b>, <b>2025</b>. (In Revision)
+    <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
+  </li>
 
-    <tr>
-      <td style="width:190px;vertical-align:middle;text-align:center;padding:10px 14px;">
-        <img src="images/paper_icme_gait.png" width="170" style="display:block;border-radius:6px;">
-      </td>
-      <td style="vertical-align:middle;padding:6px 10px;">
-        <div style="line-height:1.45;">
-          <papertitle>GaitMA: Pose-guided Multi-modal Feature Fusion for Gait Recognition</papertitle><br>
-          Fanxu Min, <b>Shaoxiang Guo</b>, Hao Fan, Junyu Dong.<br>
-          <i>IEEE International Conference on Multimedia and Expo (ICME)</i>, 2024.<br>
-          <!-- <a href="">[PDF]</a> -->
-        </div>
-      </td>
-    </tr>
+  <li>
+    Fanxu Min, <b>Shaoxiang Guo</b># , Hao Fan, Junyu Dong.<br>
+    “GaitMA: Pose-guided Multi-modal Feature Fusion for Gait Recognition.”<br>
+    <b>IEEE International Conference on Multimedia and Expo (ICME)</b>, <b>2024</b>. (CCF-B)
+    <!-- <a href="">[PDF]</a> -->
+  </li>
 
-    <!-- ===================== Existing (hyperlinks preserved) ===================== -->
-    <tr>
-      <td style="width:190px;vertical-align:middle;text-align:center;padding:10px 14px;">
-        <img src="images/paper3.png" width="170" style="display:block;border-radius:6px;">
-      </td>
-      <td style="vertical-align:middle;padding:6px 10px;">
-        <div style="line-height:1.45;">
-          <a href="https://dl.acm.org/doi/10.1145/3581783.3612390">
-            <papertitle>CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting</papertitle>
-          </a><br>
-          <b>Shaoxiang Guo</b>, Qing Cai, Lin Qi and Junyu Dong.<br>
-          <i>Proceedings of the 31st ACM International Conference on Multimedia</i> (<b>ACM MM</b>), 2023.<br>
-          <a href="https://github.com/ShaoXiang23/CLIP_Hand_Demo">[Code]</a>
-        </div>
-      </td>
-    </tr>
+  <li>
+    <b>Shaoxiang Guo</b>* , Qing Cai, Lin Qi, Junyu Dong.<br>
+    “CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting.”<br>
+    <b>ACM International Conference on Multimedia (ACM MM)</b>, <b>2023</b>. (CCF-A)
+    <!-- <a href="">[PDF]</a> <a href="https://github.com/ShaoXiang23/CLIP_Hand_Demo">[Code]</a> -->
+  </li>
 
-    <tr>
-      <td style="width:190px;vertical-align:middle;text-align:center;padding:10px 14px;">
-        <img src="images/paper2.png" width="170" style="display:block;border-radius:6px;">
-      </td>
-      <td style="vertical-align:middle;padding:6px 10px;">
-        <div style="line-height:1.45;">
-          <a href="https://ieeexplore.ieee.org/abstract/document/9680673/">
-            <papertitle>3D Hand Pose Estimation From Monocular RGB With Feature Interaction Module</papertitle>
-          </a><br>
-          <b>Shaoxiang Guo</b>, Eric Rigall, Yakun Ju, Junyu Dong.<br>
-          <i>IEEE Transactions on Circuits and Systems for Video Technology</i> (<b>IEEE T-CSVT</b>), 2022.<br>
-          <a href="">[Code]</a>
-        </div>
-      </td>
-    </tr>
+  <li>
+    Jingyi Sun, <b>Shaoxiang Guo</b># , Junyu Dong.<br>
+    “A Multi-Task Interaction Mechanism for 3D Hand Pose Estimation From RGB Image.”<br>
+    <b>IEEE International Conference on Ubiquitous Intelligence and Computing (UIC)</b>, <b>2023</b>. (CCF-C)
+    <!-- <a href="">[PDF]</a> -->
+  </li>
 
-    <tr>
-      <td style="width:190px;vertical-align:middle;text-align:center;padding:10px 14px;">
-        <img src="images/paper1.png" width="170" style="display:block;border-radius:6px;">
-      </td>
-      <td style="vertical-align:middle;padding:6px 10px;">
-        <div style="line-height:1.45;">
-          <a href="https://ieeexplore.ieee.org/abstract/document/9680673/">
-            <papertitle>Graph-Based CNNs With Self-Supervised Module for 3D Hand Pose Estimation From Monocular RGB</papertitle>
-          </a><br>
-          <b>Shaoxiang Guo</b>, Eric Rigall, Lin Qi, Xinghui Dong, Haiyan Li and Junyu Dong.<br>
-          <i>IEEE Transactions on Circuits and Systems for Video Technology</i> (<b>IEEE T-CSVT</b>), 2021.<br>
-          <!-- <a href="">[Code]</a> -->
-        </div>
-      </td>
-    </tr>
+  <li>
+    <b>Shaoxiang Guo</b>* , Eric Rigall, Yakun Ju, Junyu Dong.<br>
+    “3D Hand Pose Estimation From Monocular RGB With Feature Interaction Module.”<br>
+    <b>IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT)</b>, <b>2022</b>. (SCI Q1, Top, Latest IF=11.1)
+    <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
+  </li>
 
-    <tr>
-      <td style="width:190px;vertical-align:middle;text-align:center;padding:10px 14px;">
-        <img src="images/paper4.png" width="170" style="display:block;border-radius:6px;">
-      </td>
-      <td style="vertical-align:middle;padding:6px 10px;">
-        <div style="line-height:1.45;">
-          <a href="https://ieeexplore.ieee.org/abstract/document/9950355">
-            <papertitle>Transmittance Surface Detection and Material Identification Using Multitask ViT-SIFT Fusion</papertitle>
-          </a><br>
-          Amanuel Hirpa Madessa, Junyu Dong, Eric Rigall, Qingxuan Lv, Hafiza Sadia Nawaz Nawaz, Israel Mugunga and <b>Shaoxiang Guo</b>.<br>
-          <i>IEEE Transactions on Instrumentation and Measurement</i> (<b>IEEE T-IM</b>), 2022.<br>
-          <!-- <a href="">[Code]</a> -->
-        </div>
-      </td>
-    </tr>
+  <li>
+    <b>Shaoxiang Guo</b>* , Eric Rigall, Qi Lin, Junyu Dong.<br>
+    “Graph-based CNNs with Self-supervised Module for 3D Hand Pose Estimation from Monocular RGB.”<br>
+    <b>IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT)</b>, <b>2021</b>. (SCI Q1, Top, Latest IF=11.1)
+    <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
+  </li>
 
-    <tr>
-      <td style="width:190px;vertical-align:middle;text-align:center;padding:10px 14px;">
-        <img src="images/paper5.png" width="170" style="display:block;border-radius:6px;">
-      </td>
-      <td style="vertical-align:middle;padding:6px 10px;">
-        <div style="line-height:1.45;">
-          <a href="https://ieeexplore.ieee.org/abstract/document/9481150">
-            <papertitle>Incorporating lambertian priors into surface normals measurement</papertitle>
-          </a><br>
-          Yakun Ju, Muwei Jian, <b>Shaoxiang Guo</b>, Yingyu Wang, Huiyu Zhou, Junyu Dong.<br>
-          <i>IEEE Transactions on Instrumentation and Measurement</i> (<b>IEEE T-IM</b>), 2021.<br>
-          <!-- <a href="">[Code]</a> -->
-        </div>
-      </td>
-    </tr>
+</ul>
 
-    <tr>
-      <td style="width:190px;vertical-align:middle;text-align:center;padding:10px 14px;">
-        <img src="images/paper6.png" width="170" style="display:block;border-radius:6px;">
-      </td>
-      <td style="vertical-align:middle;padding:6px 10px;">
-        <div style="line-height:1.45;">
-          <a href="https://ieeexplore.ieee.org/abstract/document/9886734">
-            <papertitle>An Encoder-Decoder Network with Residual and Attention Blocks for Full-Face 3D Gaze Estimation</papertitle>
-          </a><br>
-          Xinyuan Song, <b>Shaoxiang Guo</b>, Zhenfu Yu and Junyu Dong.<br>
-          <i>International Conference on Image, Vision and Computing</i> (<b>ICIVC</b>), 2022.<br>
-          <!-- <a href="">[Code]</a> -->
-        </div>
-      </td>
-    </tr>
-
-  </tbody>
-</table>
 
 ---
 
