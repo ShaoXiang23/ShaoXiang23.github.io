@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Daniel Guo"
+title                    : "Shaoxiang Guo"
 title_separator          : "-"
 name                     : &name "Shaoxiang Guo (郭少翔)"
 description              : &description "personal description"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Daniel Guo (郭少翔)"
   avatar           : "wechat.png"
-  bio              : "Hello, this is Daniel Guo. I am currently pursuing my PhD in Ocean University of China under the supervision of Prof. Junyu Dong. My research interests include Hand Image Understanding and Deep Learning."
-  location         : "Qingdao, China."
+  bio              : "Hello, I am Shaoxiang Guo. I am a Postdoctoral Researcher at Zhejiang University. I received my Ph.D. from Ocean University of China in 2024, supervised by Prof. Junyu Dong. Previously, I was a Postdoctoral Research Associate at the National Robotarium (Heriot-Watt University & the University of Edinburgh), where I contributed to an EPSRC-funded project on data-driven laser resonator alignment and beam-profile image datasets. My research interests include monocular 3D hand pose/mesh reconstruction, geometry-aware representation learning, and vision + physics-informed learning for real-world systems."
+  location         : "Zibo, China."
   employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=dtqh5RQAAAAJ&hl=en&oi=ao"
-  email            : "guoshaoxiang@stu.ouc.edu.cn"
+  email            : "gsx311381@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Shaoxiang-Guo"
   uri              :
   bitbucket        :
