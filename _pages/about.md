@@ -71,10 +71,13 @@ My research interests broadly include computer vision, machine learning, deep le
   </li>
 
   <li>
-    <b>Shaoxiang Guo</b>* , Qing Cai, Lin Qi, Junyu Dong.<br>
-    “CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting.”<br>
+    <b>Shaoxiang Guo</b>* , Qing Cai, Lin Qi and Junyu Dong.<br>
+    <a href="https://dl.acm.org/doi/10.1145/3581783.3612390">
+      “CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting.”
+    </a><br>
     <b>ACM International Conference on Multimedia (ACM MM)</b>, <b>2023</b>. (CCF-A)
-    <!-- <a href="">[PDF]</a> <a href="https://github.com/ShaoXiang23/CLIP_Hand_Demo">[Code]</a> -->
+    &nbsp; <a href="https://github.com/ShaoXiang23/CLIP_Hand_Demo">[Code]</a>
+    <!-- <a href="">[PDF]</a> -->
   </li>
 
   <li>
@@ -86,20 +89,50 @@ My research interests broadly include computer vision, machine learning, deep le
 
   <li>
     <b>Shaoxiang Guo</b>* , Eric Rigall, Yakun Ju, Junyu Dong.<br>
-    “3D Hand Pose Estimation From Monocular RGB With Feature Interaction Module.”<br>
+    <a href="https://ieeexplore.ieee.org/abstract/document/9680673/">
+      “3D Hand Pose Estimation From Monocular RGB With Feature Interaction Module.”
+    </a><br>
     <b>IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT)</b>, <b>2022</b>. (SCI Q1, Top, Latest IF=11.1)
     <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
   </li>
 
   <li>
-    <b>Shaoxiang Guo</b>* , Eric Rigall, Qi Lin, Junyu Dong.<br>
-    “Graph-based CNNs with Self-supervised Module for 3D Hand Pose Estimation from Monocular RGB.”<br>
+    <b>Shaoxiang Guo</b>* , Eric Rigall, Lin Qi, Xinghui Dong, Haiyan Li and Junyu Dong.<br>
+    <a href="https://ieeexplore.ieee.org/abstract/document/9680673/">
+      “Graph-Based CNNs With Self-Supervised Module for 3D Hand Pose Estimation From Monocular RGB.”
+    </a><br>
     <b>IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT)</b>, <b>2021</b>. (SCI Q1, Top, Latest IF=11.1)
     <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
   </li>
 
-</ul>
+  <li>
+    Amanuel Hirpa Madessa, Junyu Dong, Eric Rigall, Qingxuan Lv, Hafiza Sadia Nawaz Nawaz, Israel Mugunga and <b>Shaoxiang Guo</b>.<br>
+    <a href="https://ieeexplore.ieee.org/abstract/document/9950355">
+      “Transmittance Surface Detection and Material Identification Using Multitask ViT-SIFT Fusion.”
+    </a><br>
+    <b>IEEE Transactions on Instrumentation and Measurement (IEEE T-IM)</b>, <b>2022</b>.
+    <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
+  </li>
 
+  <li>
+    Yakun Ju, Muwei Jian, <b>Shaoxiang Guo</b>, Yingyu Wang, Huiyu Zhou, Junyu Dong.<br>
+    <a href="https://ieeexplore.ieee.org/abstract/document/9481150">
+      “Incorporating Lambertian Priors into Surface Normals Measurement.”
+    </a><br>
+    <b>IEEE Transactions on Instrumentation and Measurement (IEEE T-IM)</b>, <b>2021</b>.
+    <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
+  </li>
+
+  <li>
+    Xinyuan Song, <b>Shaoxiang Guo</b>, Zhenfu Yu and Junyu Dong.<br>
+    <a href="https://ieeexplore.ieee.org/abstract/document/9886734">
+      “An Encoder-Decoder Network with Residual and Attention Blocks for Full-Face 3D Gaze Estimation.”
+    </a><br>
+    <b>International Conference on Image, Vision and Computing (ICIVC)</b>, <b>2022</b>.
+    <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
+  </li>
+
+</ul>
 
 ---
 
