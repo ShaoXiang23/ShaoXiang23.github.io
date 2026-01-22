@@ -12,14 +12,15 @@ redirect_from:
 
 Hello, welcome to **Shaoxiang Guo's** homepage.
 
-I received my **Ph.D.** degree (Computer Application Technology) from **Ocean University of China (OUC)** in 2024.  
-I am currently a **Postdoctoral Researcher** at **Zhejiang University** (College of Information Science and Electronic Engineering), working with **Prof. Susanto Rahardja**. Previously, I was a **Postdoctoral Research Associate** at the **National Robotarium** (Heriot-Watt University & University of Edinburgh), where I contributed to an **EPSRC-funded** project on data-driven **laser resonator alignment**.
+I received my **Ph.D.** degree (Computer Science) from **Ocean University of China (OUC)** in 2024, under supervised by **Prof. Junyu Dong**.  
+I am currently a **Postdoctoral Researcher** at **Zhejiang University** (College of Information Science and Electronic Engineering), working with **Prof. Susanto Rahardja**. Previously, I was a **Postdoctoral Research Associate** at the **National Robotarium** (Heriot-Watt University & University of Edinburgh), under supervised by **Prof. Mustafa Suphi Erden**, where I contributed to an **EPSRC-funded** project.
 
 My research interests broadly include computer vision, machine learning, deep learning, and geometry-aware representation learning, with a focus on:
 
-- **Monocular 3D hand pose/mesh reconstruction** (camera-space reconstruction, ambiguity mitigation)
-- **Geometry-guided learning** (e.g., training-time pseudo-stereo supervision; cross-attention fusion)
-- **Beam image understanding for optical alignment** (dataset construction; coarse-to-fine prediction; real-world deployment)
+- **Monocular 3D hand pose/mesh reconstruction** 
+- **Geometry-guided learning** 
+- **Beam image understanding for optical alignment**
+- **3D Reconstruction/Underwater Stereo Matching/Robotics**
 - *(Recently exploring)* **speaker diarization** and audio representation learning
 
 ---
@@ -39,7 +40,7 @@ My research interests broadly include computer vision, machine learning, deep le
 
 - **Postdoctoral Research Associate**, National Robotarium (Heriot-Watt University & University of Edinburgh), Edinburgh, UK, **Sep 2024 – Aug 2025**  
   Advisor: Prof. Mustafa Suphi Erden  
-  Collaborators: Prof. Mike J. Chantler, Prof. M. J. Daniel Esser, Dr. Richard M. Carter
+  Collaborators: Prof. Mike J. Chantler, Prof. M. J. Daniel Esser, Dr. Richard M. Carter, Dr. Donald Risbridger
 
 ---
 
@@ -59,14 +60,14 @@ My research interests broadly include computer vision, machine learning, deep le
   <li>
     <b>Shaoxiang Guo</b>* , Qing Cai, Wankun Chen, Jingyi Sun, Junyu Dong, Hui Yu.<br>
     “Pseudo Stereo for Camera Space Hand Pose and Shape Estimation from Monocular Image.”<br>
-    <b>Knowledge-Based Systems (KBS)</b>, <b>2025</b>. (In Revision)
+    Knowledge-Based Systems <b>(KBS)</b>, <b>2025</b>. (In Revision)
     <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
   </li>
 
   <li>
     Fanxu Min, <b>Shaoxiang Guo</b># , Hao Fan, Junyu Dong.<br>
     “GaitMA: Pose-guided Multi-modal Feature Fusion for Gait Recognition.”<br>
-    <b>IEEE International Conference on Multimedia and Expo (ICME)</b>, <b>2024</b>. (CCF-B)
+    IEEE International Conference on Multimedia and Expo <b>(ICME)</b>, <b>2024</b>. (CCF-B)
     <!-- <a href="">[PDF]</a> -->
   </li>
 
@@ -75,7 +76,7 @@ My research interests broadly include computer vision, machine learning, deep le
     <a href="https://dl.acm.org/doi/10.1145/3581783.3612390">
       “CLIP-Hand3D: Exploiting 3D Hand Pose Estimation via Context-Aware Prompting.”
     </a><br>
-    <b>ACM International Conference on Multimedia (ACM MM)</b>, <b>2023</b>. (CCF-A)
+    ACM International Conference on Multimedia <b>(ACM MM)</b>, <b>2023</b>. (CCF-A)
     &nbsp; <a href="https://github.com/ShaoXiang23/CLIP_Hand_Demo">[Code]</a>
     <!-- <a href="">[PDF]</a> -->
   </li>
@@ -83,7 +84,7 @@ My research interests broadly include computer vision, machine learning, deep le
   <li>
     Jingyi Sun, <b>Shaoxiang Guo</b># , Junyu Dong.<br>
     “A Multi-Task Interaction Mechanism for 3D Hand Pose Estimation From RGB Image.”<br>
-    <b>IEEE International Conference on Ubiquitous Intelligence and Computing (UIC)</b>, <b>2023</b>. (CCF-C)
+    IEEE International Conference on Ubiquitous Intelligence and Computing <b>(UIC)</b>, <b>2023</b>. (CCF-C)
     <!-- <a href="">[PDF]</a> -->
   </li>
 
@@ -92,7 +93,7 @@ My research interests broadly include computer vision, machine learning, deep le
     <a href="https://ieeexplore.ieee.org/abstract/document/9680673/">
       “3D Hand Pose Estimation From Monocular RGB With Feature Interaction Module.”
     </a><br>
-    <b>IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT)</b>, <b>2022</b>. (SCI Q1, Top, Latest IF=11.1)
+    IEEE Transactions on Circuits and Systems for Video Technology <b>(IEEE T-CSVT)</b>, <b>2022</b>. (SCI Q1, Top, Latest IF=11.1)
     <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
   </li>
 
@@ -101,7 +102,7 @@ My research interests broadly include computer vision, machine learning, deep le
     <a href="https://ieeexplore.ieee.org/abstract/document/9680673/">
       “Graph-Based CNNs With Self-Supervised Module for 3D Hand Pose Estimation From Monocular RGB.”
     </a><br>
-    <b>IEEE Transactions on Circuits and Systems for Video Technology (IEEE T-CSVT)</b>, <b>2021</b>. (SCI Q1, Top, Latest IF=11.1)
+    IEEE Transactions on Circuits and Systems for Video Technology <b>(IEEE T-CSVT)</b>, <b>2021</b>. (SCI Q1, Top, Latest IF=11.1)
     <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
   </li>
 
@@ -110,7 +111,7 @@ My research interests broadly include computer vision, machine learning, deep le
     <a href="https://ieeexplore.ieee.org/abstract/document/9950355">
       “Transmittance Surface Detection and Material Identification Using Multitask ViT-SIFT Fusion.”
     </a><br>
-    <b>IEEE Transactions on Instrumentation and Measurement (IEEE T-IM)</b>, <b>2022</b>.
+    IEEE Transactions on Instrumentation and Measurement <b>(IEEE T-IM)</b>, <b>2022</b>.
     <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
   </li>
 
@@ -119,7 +120,7 @@ My research interests broadly include computer vision, machine learning, deep le
     <a href="https://ieeexplore.ieee.org/abstract/document/9481150">
       “Incorporating Lambertian Priors into Surface Normals Measurement.”
     </a><br>
-    <b>IEEE Transactions on Instrumentation and Measurement (IEEE T-IM)</b>, <b>2021</b>.
+    IEEE Transactions on Instrumentation and Measurement <b>(IEEE T-IM)</b>, <b>2021</b>.
     <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
   </li>
 
@@ -128,7 +129,7 @@ My research interests broadly include computer vision, machine learning, deep le
     <a href="https://ieeexplore.ieee.org/abstract/document/9886734">
       “An Encoder-Decoder Network with Residual and Attention Blocks for Full-Face 3D Gaze Estimation.”
     </a><br>
-    <b>International Conference on Image, Vision and Computing (ICIVC)</b>, <b>2022</b>.
+    International Conference on Image, Vision and Computing <b>(ICIVC)</b>, <b>2022</b>.
     <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
   </li>
 
