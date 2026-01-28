@@ -8,8 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-<<div class="card">
-  <div style="font-size:13px;font-weight:700;opacity:.9;">
+<div class="card">
+  <div style="font-size:16px;font-weight:700;opacity:.9;">
     Postdoctoral Researcher · Zhejiang University · Computer Vision / Geometry-aware Learning
   </div>
 
