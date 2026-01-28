@@ -14,13 +14,13 @@ redirect_from:
   </div>
 
   <div style="margin-top:10px; font-size:18px;">
-    <a class="pill" href="#about">About</a>
-    <a class="pill" href="#contact">Contact</a>
-    <a class="pill" href="#experience">Experience</a>
-    <a class="pill" href="#publications">Publications</a>
-    <a class="pill" href="#projects">Projects</a>
-    <a class="pill" href="#honors">Honors</a>
-    <a class="pill" href="#education">Education</a>
+    <a class="pill" href="#about"><i class="fas fa-user"></i> About</a>
+    <a class="pill" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    <a class="pill" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+    <a class="pill" href="#publications"><i class="fas fa-book"></i> Publications</a>
+    <a class="pill" href="#projects"><i class="fas fa-code"></i> Projects</a>
+    <a class="pill" href="#honors"><i class="fas fa-award"></i> Honors</a>
+    <a class="pill" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
   </div>
 </div>
 
