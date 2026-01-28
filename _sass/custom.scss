@@ -219,3 +219,27 @@ hr{
   border-color: var(--accent);
   background: rgba(0,0,0,.05);
 }
+/* =========================
+   Sticky Hero (only)
+   ========================= */
+
+/* 只让首页顶部那张 hero 卡片 sticky，不要全局 .card sticky */
+.hero-card{
+  position: sticky;
+  top: 14px;          /* 离顶部距离，可调 10~18 */
+  z-index: 50;        /* 确保在正文上方 */
+}
+
+/* 防止 sticky 覆盖时卡片边缘太“硬” */
+.hero-card{
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.78);
+}
+
+/* 移动端通常不建议 sticky（屏幕太小会挡内容） */
+@media (max-width: 768px){
+  .hero-card{
+    position: static;
+  }
+}
+
