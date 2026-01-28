@@ -14,13 +14,13 @@ redirect_from:
   </div>
 
   <div style="margin-top:10px; font-size:18px;">
-    <a href="#about">About</a> ·
-    <a href="#contact">Contact</a> ·
-    <a href="#experience">Experience</a> ·
-    <a href="#publications">Publications</a> ·
-    <a href="#projects">Projects</a> ·
-    <a href="#honors">Honors</a> ·
-    <a href="#education">Education</a>
+    <a class="pill" href="#about">About</a>
+    <a class="pill" href="#contact">Contact</a>
+    <a class="pill" href="#experience">Experience</a>
+    <a class="pill" href="#publications">Publications</a>
+    <a class="pill" href="#projects">Projects</a>
+    <a class="pill" href="#honors">Honors</a>
+    <a class="pill" href="#education">Education</a>
   </div>
 </div>
 
