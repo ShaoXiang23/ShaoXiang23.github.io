@@ -130,9 +130,10 @@ hr{
    - Apply ONLY when the element has class "hero-card"
    ========================= */
 .hero-card{
-  position: sticky;
-  top: 14px;     /* 10~18 looks good */
-  z-index: 50;
+  // position: sticky;
+  // top: 14px;     /* 10~18 looks good */
+  // z-index: 50;
+   position: static;
 }
 
 /* Mobile: usually disable sticky to avoid covering content */
