@@ -44,3 +44,38 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- end custom head snippets -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hero = document.querySelector(".hero-card");
+    if (!hero) return;
+
+    // config
+    const HIDE_AFTER = 90;   // 滚动超过多少 px 就隐藏（你可调 60~140）
+    const SHOW_BEFORE = 30;  // 回到顶部多少 px 内就显示
+    let ticking = false;
+
+    function update(){
+      const y = window.scrollY || document.documentElement.scrollTop || 0;
+
+      if (y > HIDE_AFTER) {
+        hero.classList.add("hero--hide");
+      } else if (y < SHOW_BEFORE) {
+        hero.classList.remove("hero--hide");
+      } else {
+        // 中间区间：不强制改变，避免抖动（可选）
+      }
+
+      ticking = false;
+    }
+
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // init
+    update();
+  });
+</script>
