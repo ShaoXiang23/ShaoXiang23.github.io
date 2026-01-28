@@ -9,17 +9,28 @@ redirect_from:
 ---
 
 <div class="card">
-  <div style="font-size:28px;font-weight:800;line-height:1.2;">Shaoxiang Guo <span style="font-weight:600;opacity:.6;">(郭少翔)</span></div>
+  <div style="font-size:28px;font-weight:800;line-height:1.2;">
+    Shaoxiang Guo <span style="font-weight:600;opacity:.6;">(郭少翔)</span>
+  </div>
+
   <div style="margin-top:6px;font-size:15px;opacity:.85;">
     Postdoctoral Researcher · Zhejiang University · Computer Vision / Geometry-aware Learning
   </div>
-  <div style="margin-top:10px;">
-    <a href="#publications">Publications</a> · <a href="#projects--demos">Projects</a> · <a href="#contact--profiles">Contact</a>
+
+  <div style="margin-top:10px; font-size:18px;">
+    <a href="#about">About</a> ·
+    <a href="#contact">Contact</a> ·
+    <a href="#experience">Experience</a> ·
+    <a href="#publications">Publications</a> ·
+    <a href="#projects">Projects</a> ·
+    <a href="#honors">Honors</a> ·
+    <a href="#education">Education</a>
   </div>
 </div>
 
 <br>
 
+<a id="about"></a>
 ## About
 
 Hello, welcome to **Shaoxiang Guo's** homepage.
@@ -37,6 +48,7 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ---
 
+<a id="contact"></a>
 ## Contact & Profiles
 
 - **Email**: gsx311381@gmail.com ; S.Guo@hw.ac.uk ; guoshaoxiang@stu.ouc.edu.cn  
@@ -45,6 +57,7 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ---
 
+<a id="experience"></a>
 ## Experience
 
 - **Postdoctoral Researcher**, Zhejiang University (ZJU), Hangzhou, China, **Dec 2025 – Present**  
@@ -56,6 +69,7 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ---
 
+<a id="publications"></a>
 ## Publications
 
 <p><b>Notes:</b> First author*; Co-author#.</p>
@@ -149,6 +163,7 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ---
 
+<a id="projects"></a>
 ## Projects / Demos
 
 - Beam-profile dataset construction for optical alignment (image collection, pairing strategy, labeling, validation)
@@ -158,6 +173,7 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ---
 
+<a id="honors"></a>
 ## Honors and Awards
 
 - Excellent Graduate, Ocean University of China, 2024
@@ -173,6 +189,7 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ---
 
+<a id="education"></a>
 ## Education
 
 - Ph.D., Computer Application Technology, Faculty of Information Science and Engineering, Ocean University of China, **2020–2024**
