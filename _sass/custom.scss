@@ -161,4 +161,15 @@ hr {
 /* ===== Global font size (make body smaller) ===== */
 html { font-size: 15px; }   /* 你可以先试 15px；想再小就 14.5px/14px */
 body { line-height: 1.68; }  /* 你现在是 1.75，略松 */
+/* ===== Section headings styling ===== */
+.page__content h2{
+  font-weight: 850;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  margin-top: 1.4em;
+}
+.page__content h3{
+  font-weight: 800;
+  margin-top: 1.0em;
+}
 
