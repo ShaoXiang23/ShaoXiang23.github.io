@@ -186,4 +186,8 @@ body { background: #fcfcfd; }
   top: 12px;
   z-index: 20;
 }
-
+/* ===== Contact list spacing (scoped) ===== */
+#contact + h2 + ul,
+#contact ~ ul {
+  margin-top: 0.4rem;
+}
