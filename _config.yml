@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Shaoxiang Guo (郭少翔)"
   avatar           : "wechat1.png"
-  bio              : "Postdoctoral Researcher @ Zhejiang University. Previously at the National Robotarium (EPSRC-funded). Research: monocular 3D hand pose/mesh, geometry-aware learning, and beam-image understanding for optical alignment; recently exploring speaker diarization."
+  bio              : "Postdoctoral Researcher at Zhejiang University (CIEE). Previously at the National Robotarium (EPSRC project). Interests: monocular 3D hand reconstruction, geometry-aware learning, and vision for real-world optical alignment; exploring speaker diarization."
   location         : "Edinburgh, Scotland, UK."
   employer         : 
   pubmed           : 
