@@ -103,5 +103,60 @@ hr {
   text-align: justify;
   text-justify: inter-word;
 }
+/* ===== Contact card ===== */
+.contact-card {
+  border: 1px solid rgba(0,0,0,.10);
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: rgba(0,0,0,.02);
+}
+
+.contact-row {
+  display: flex;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(0,0,0,.10);
+}
+
+.contact-row:last-child {
+  border-bottom: none;
+}
+
+.contact-label {
+  min-width: 92px;
+  font-weight: 800;
+  opacity: .85;
+}
+
+.contact-value {
+  flex: 1;
+}
+
+.contact-link {
+  font-weight: 600;
+}
+
+.sep {
+  margin: 0 8px;
+  opacity: .35;
+}
+
+/* Pills for links */
+.pill {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 2px 6px 2px 0;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.12);
+  background: rgba(0,0,0,.03);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.pill:hover {
+  border-color: var(--accent);
+  background: rgba(0,0,0,.05);
+}
 
 
