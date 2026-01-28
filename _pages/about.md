@@ -21,7 +21,6 @@ redirect_from:
     <a class="pill" href="#projects"><i class="fas fa-code"></i> Projects</a>
     <a class="pill" href="#honors"><i class="fas fa-award"></i> Honors</a>
     <a class="pill" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-    <a href="#visitors">Visitors</a>
   </div>
 </div>
 
@@ -198,8 +197,6 @@ My research interests broadly include computer vision, machine learning, deep le
 - Ph.D., Computer Application Technology, Faculty of Information Science and Engineering, Ocean University of China, **2020–2024**
 - M.Eng., Software Engineering, School of Information Science and Engineering, Ocean University of China, **2017–2020**
 - B.Eng., Software Engineering, School of Information Science and Engineering, Qufu Normal University, **2013–2017**
-
----
 
 <hr>
 
