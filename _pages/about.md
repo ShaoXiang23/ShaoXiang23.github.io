@@ -44,7 +44,7 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ---
 
-<div class="contact-card">
+<div class="contact-block">
 
   <div class="contact-row">
     <span class="contact-label">Email</span>
@@ -74,7 +74,6 @@ My research interests broadly include computer vision, machine learning, deep le
   </div>
 
 </div>
-
 
 ---
 
