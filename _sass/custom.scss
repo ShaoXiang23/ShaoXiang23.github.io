@@ -92,5 +92,10 @@ hr {
   font-size: 0.95rem;
   opacity: 0.9;
 }
+/* Justify the sidebar bio text */
+.author__bio {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 
