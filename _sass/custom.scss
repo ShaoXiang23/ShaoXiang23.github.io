@@ -79,4 +79,18 @@ hr {
   background: rgba(0,0,0,.03);
   box-shadow: 0 8px 24px rgba(0,0,0,.06);
 }
+/* Sidebar polish */
+.author__avatar img {
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+.author__name {
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+.author__bio {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
 
