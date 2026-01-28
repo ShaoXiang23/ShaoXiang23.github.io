@@ -197,3 +197,22 @@ My research interests broadly include computer vision, machine learning, deep le
 - Ph.D., Computer Application Technology, Faculty of Information Science and Engineering, Ocean University of China, **2020–2024**
 - M.Eng., Software Engineering, School of Information Science and Engineering, Ocean University of China, **2017–2020**
 - B.Eng., Software Engineering, School of Information Science and Engineering, Qufu Normal University, **2013–2017**
+
+---
+
+<hr>
+
+<a id="visitors"></a>
+<h2>Visitors</h2>
+
+<div class="widget-card widget-visitormap">
+  <div class="widget-title">Live visitor map</div>
+  <div class="widget-subtitle">Thanks for stopping by 👋</div>
+
+  <div class="widget-body">
+    <script type="text/javascript" id="mapmyvisitors"
+      src="//mapmyvisitors.com/map.js?d=sdjqhFlAiYvLQLsgorr7ShJJGlZiH6btYejO4nUhiek&cl=ffffff&w=a">
+    </script>
+  </div>
+</div>
+
