@@ -2,7 +2,17 @@
    Custom overrides (Guo)
    ========================= */
 
-/* Use Inter globally */
+/* ===== Brand / tokens ===== */
+:root{
+  --accent: #2f6feb;                 /* calm blue, GitHub-like */
+  --card-border: rgba(0,0,0,.10);
+  --card-bg: rgba(0,0,0,.02);
+  --card-shadow: 0 10px 28px rgba(0,0,0,.08);
+  --card-radius: 16px;
+  --card-pad: 16px 18px;
+}
+
+/* ===== Typography ===== */
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
@@ -10,7 +20,6 @@ body {
   letter-spacing: 0.1px;
 }
 
-/* Cleaner headings hierarchy */
 h1, h2, h3, h4 {
   letter-spacing: -0.2px;
 }
@@ -19,19 +28,70 @@ h2 {
   margin-top: 1.2em;
 }
 
-/* Nicer link underline */
+/* ===== Links ===== */
 a {
+  color: var(--accent);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
+a:hover {
+  filter: brightness(0.9);
+}
 
-/* Make content area a bit more “paper-like” */
+/* ===== Layout width (paper-like) ===== */
 .page__content,
 .page__inner-wrap {
   max-width: 980px;
 }
 
-/* Publications list helper (if you use <ul class="pub-list">) */
+/* ===== Buttons (Minimal Mistakes uses .btn) ===== */
+.btn,
+.btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.btn:hover,
+.btn--primary:hover {
+  filter: brightness(0.92);
+}
+
+/* ===== Nice horizontal rule ===== */
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,.18), transparent);
+}
+
+/* ===== Card helper (used by Hero) ===== */
+.card {
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-pad);
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+.card > div:first-child {
+  line-height: 1.35;
+}
+
+/* ===== Sidebar polish ===== */
+.author__avatar img {
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+.author__name {
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+.author__bio {
+  line-height: 1.55;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ===== Publications list helper (optional) ===== */
 .pub-list {
   list-style: none;
   padding-left: 0;
@@ -43,157 +103,24 @@ a {
   text-indent: -18px;
   line-height: 1.55;
 }
-/* ===== Accent color (brand) ===== */
-:root{
-  --accent: #2f6feb;   /* calm blue, GitHub-like */
-}
-
-/* Links */
-a {
-  color: var(--accent);
-}
-a:hover {
-  filter: brightness(0.9);
-}
-
-/* Buttons (Minimal Mistakes uses .btn) */
-.btn, .btn--primary {
-  background: var(--accent);
-  border-color: var(--accent);
-}
-.btn:hover, .btn--primary:hover {
-  filter: brightness(0.92);
-}
-
-/* Nice horizontal rule */
-hr {
-  border: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,.18), transparent);
-}
-/* ===== Card helper ===== */
-.card {
-  border: 1px solid rgba(0,0,0,.10);
-  border-radius: 14px;
-  padding: 16px 18px;
-  background: rgba(0,0,0,.03);
-  box-shadow: 0 8px 24px rgba(0,0,0,.06);
-}
-/* Sidebar polish */
-.author__avatar img {
-  border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(0,0,0,.12);
-}
-.author__name {
-  font-weight: 800;
-  letter-spacing: -0.2px;
-}
-.author__bio {
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
-/* Justify the sidebar bio text */
-.author__bio {
-  text-align: justify;
-  text-justify: inter-word;
-}
-.author__bio {
-  line-height: 1.55;
-  font-size: 0.95rem;
-  text-align: justify;
-  text-justify: inter-word;
-}
-/* ===== Contact card ===== */
-.contact-card {
-  border: 1px solid rgba(0,0,0,.10);
-  border-radius: 14px;
-  padding: 14px 16px;
-  background: rgba(0,0,0,.02);
-}
-
-.contact-row {
-  display: flex;
-  gap: 12px;
-  padding: 8px 0;
-  border-bottom: 1px dashed rgba(0,0,0,.10);
-}
-
-.contact-row:last-child {
-  border-bottom: none;
-}
-
-.contact-label {
-  min-width: 92px;
-  font-weight: 800;
-  opacity: .85;
-}
-
-.contact-value {
-  flex: 1;
-}
-
-.contact-link {
-  font-weight: 600;
-}
-
-.sep {
-  margin: 0 8px;
-  opacity: .35;
-}
-
-/* Pills for links */
-.pill {
-  display: inline-block;
-  padding: 6px 10px;
-  margin: 2px 6px 2px 0;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,.12);
-  background: rgba(0,0,0,.03);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.pill:hover {
-  border-color: var(--accent);
-  background: rgba(0,0,0,.05);
-}
-/* =========================
-   Unified card system
-   ========================= */
-:root{
-  --card-border: rgba(0,0,0,.10);
-  --card-bg: rgba(0,0,0,.02);
-  --card-shadow: 0 10px 28px rgba(0,0,0,.08);
-  --card-radius: 16px;
-  --card-pad: 16px 18px;
-}
-
-/* Apply the same look to both cards */
-.card,
-.contact-card {
-  border: 1px solid var(--card-border);
-  border-radius: var(--card-radius);
-  padding: var(--card-pad);
-  background: var(--card-bg);
-  box-shadow: var(--card-shadow);
-}
-
-/* Make the hero card text slightly tighter (optional) */
-.card > div:first-child {
-  line-height: 1.35;
-}
 
 /* =========================
-   Contact card inner layout
+   Contact block (no card)
    ========================= */
+.contact-block {
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
 .contact-row {
   display: flex;
   gap: 14px;
   padding: 10px 0;
   border-bottom: 1px dashed rgba(0,0,0,.10);
 }
-
 .contact-row:last-child { border-bottom: none; }
 
 .contact-label {
@@ -202,7 +129,6 @@ hr {
   opacity: .85;
 }
 
-/* Emails wrap nicely */
 .contact-value {
   flex: 1;
   display: flex;
@@ -211,9 +137,13 @@ hr {
   gap: 6px 10px;
 }
 
+.contact-link {
+  font-weight: 600;
+}
+
 .sep { opacity: .30; }
 
-/* Pills */
+/* Pills (used for profiles / code links) */
 .pill {
   display: inline-block;
   padding: 7px 12px;
@@ -224,10 +154,7 @@ hr {
   font-weight: 700;
   font-size: 0.95rem;
 }
-
 .pill:hover {
   border-color: var(--accent);
   background: rgba(0,0,0,.05);
 }
-
-
