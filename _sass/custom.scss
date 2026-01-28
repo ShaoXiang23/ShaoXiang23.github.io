@@ -256,4 +256,41 @@ hr{
     position: static;
   }
 }
+/* ===== Base ===== */
+html{
+  font-size: 15px;
+  scroll-padding-top: 160px; /* sticky hero 避免遮挡锚点 */
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  line-height: 1.68;
+  letter-spacing: 0.1px;
+  text-rendering: optimizeLegibility;
+}
+
+/* Links */
+a{
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover{
+  color: var(--accent-600);
+  text-decoration-thickness: 2px;
+}
+
+/* Selection */
+::selection{ background: var(--accent-soft); }
+
+/* Horizontal rule */
+hr{
+  border: 0;
+  height: 1px;
+  margin: 1.4rem 0;
+  background: linear-gradient(90deg, transparent, rgba(15,23,42,.18), transparent);
+}
 
