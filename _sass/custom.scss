@@ -1,0 +1,45 @@
+/* =========================
+   Custom overrides (Guo)
+   ========================= */
+
+/* Use Inter globally */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+}
+
+/* Cleaner headings hierarchy */
+h1, h2, h3, h4 {
+  letter-spacing: -0.2px;
+}
+
+h2 {
+  margin-top: 1.2em;
+}
+
+/* Nicer link underline */
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Make content area a bit more “paper-like” */
+.page__content,
+.page__inner-wrap {
+  max-width: 980px;
+}
+
+/* Publications list helper (if you use <ul class="pub-list">) */
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.pub-list li {
+  margin: 0 0 14px 0;
+  padding-left: 18px;
+  text-indent: -18px;
+  line-height: 1.55;
+}
