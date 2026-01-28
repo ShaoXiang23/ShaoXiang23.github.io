@@ -8,6 +8,18 @@ redirect_from:
   - /about.html
 ---
 
+<div class="card">
+  <div style="font-size:28px;font-weight:800;line-height:1.2;">Shaoxiang Guo <span style="font-weight:600;opacity:.6;">(郭少翔)</span></div>
+  <div style="margin-top:6px;font-size:15px;opacity:.85;">
+    Postdoctoral Researcher · Zhejiang University · Computer Vision / Geometry-aware Learning
+  </div>
+  <div style="margin-top:10px;">
+    <a href="#publications">Publications</a> · <a href="#projects--demos">Projects</a> · <a href="#contact--profiles">Contact</a>
+  </div>
+</div>
+
+<br>
+
 ## About
 
 Hello, welcome to **Shaoxiang Guo's** homepage.
