@@ -282,4 +282,48 @@ hr{
 @media (max-width: 768px){
   .hero-card{ transition-duration: .18s; }
 }
+/* =========================
+   Hero tone: lighter + consistent icon/link color
+   ========================= */
+
+/* Hero itself: lighter panel */
+.hero-card{
+  background: rgba(255,255,255,.86);           /* 比 .78 更白 */
+  border-color: rgba(15,23,42,.08);
+  box-shadow: 0 10px 24px rgba(15,23,42,.08);  /* 更柔 */
+}
+
+/* Hero title line（那一行 Postdoctoral ...）变浅一点 */
+.hero-card > div:first-child{
+  color: rgba(15,23,42,.72);
+  font-weight: 650;
+}
+
+/* Hero 内部所有链接：不要变“黑”，保持主色 */
+.hero-card a{
+  color: var(--accent);
+  font-weight: 750;
+}
+
+/* Hero 内部 icon（FontAwesome svg/i）统一成偏浅的灰蓝 */
+.hero-card i,
+.hero-card svg{
+  color: rgba(15,23,42,.55);
+  fill: rgba(15,23,42,.55);
+}
+
+/* Pills/按钮容器如果你是用 .pill 或者类似类名：让它更轻 */
+.hero-card .pill,
+.hero-card .nav-pill,
+.hero-card a.pill{
+  background: rgba(255,255,255,.90);
+  border-color: rgba(15,23,42,.10);
+  box-shadow: 0 4px 10px rgba(15,23,42,.06);
+}
+
+/* Hover：强调主色，不要变黑 */
+.hero-card a:hover{
+  color: var(--accent-600);
+  text-decoration-thickness: 2px;
+}
 
