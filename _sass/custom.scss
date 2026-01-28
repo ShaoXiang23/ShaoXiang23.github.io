@@ -5,163 +5,40 @@
 /* ===== Brand / tokens ===== */
 :root{
   --accent: #2f6feb;                 /* calm blue, GitHub-like */
+  --accent-soft: rgba(47,111,235,.12);
+
   --card-border: rgba(0,0,0,.10);
-  --card-bg: rgba(0,0,0,.02);
+  --card-bg: rgba(255,255,255,.72); /* translucent white */
   --card-shadow: 0 10px 28px rgba(0,0,0,.08);
   --card-radius: 16px;
   --card-pad: 16px 18px;
 }
 
+/* ===== Global font size + anchor offset (sticky card) ===== */
+html{
+  font-size: 15px;          /* try 15px; if still big -> 14.5px or 14px */
+  scroll-padding-top: 120px; /* avoid anchor being hidden under sticky card */
+}
+
+/* ===== Background ===== */
+body{
+  background: #fcfcfd; /* subtle paper */
+}
+
 /* ===== Typography ===== */
-body {
+body{
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  line-height: 1.75;
+  line-height: 1.68;   /* tighter than 1.75 */
   letter-spacing: 0.1px;
+  text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4{
   letter-spacing: -0.2px;
 }
 
-h2 {
-  margin-top: 1.2em;
-}
-
-/* ===== Links ===== */
-a {
-  color: var(--accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-a:hover {
-  filter: brightness(0.9);
-}
-
-/* ===== Layout width (paper-like) ===== */
-.page__content,
-.page__inner-wrap {
-  max-width: 860px;
-}
-
-/* ===== Buttons (Minimal Mistakes uses .btn) ===== */
-.btn,
-.btn--primary {
-  background: var(--accent);
-  border-color: var(--accent);
-}
-.btn:hover,
-.btn--primary:hover {
-  filter: brightness(0.92);
-}
-
-/* ===== Nice horizontal rule ===== */
-hr {
-  border: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,.18), transparent);
-}
-
-/* ===== Card helper (used by Hero) ===== */
-.card {
-  border: 1px solid var(--card-border);
-  border-radius: var(--card-radius);
-  padding: var(--card-pad);
-  background: var(--card-bg);
-  box-shadow: var(--card-shadow);
-}
-.card > div:first-child {
-  line-height: 1.35;
-}
-
-/* ===== Sidebar polish ===== */
-.author__avatar img {
-  border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(0,0,0,.12);
-}
-.author__name {
-  font-weight: 800;
-  letter-spacing: -0.2px;
-}
-.author__bio {
-  line-height: 1.55;
-  font-size: 0.95rem;
-  opacity: 0.9;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-/* ===== Publications list helper (optional) ===== */
-.pub-list {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
-}
-.pub-list li {
-  margin: 0 0 14px 0;
-  padding-left: 18px;
-  text-indent: -18px;
-  line-height: 1.55;
-}
-
-/* =========================
-   Contact block (no card)
-   ========================= */
-.contact-block {
-  margin: 0.5rem 0 1.5rem 0;
-  padding: 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
-}
-
-.contact-row {
-  display: flex;
-  gap: 14px;
-  padding: 10px 0;
-  border-bottom: 1px dashed rgba(0,0,0,.10);
-}
-.contact-row:last-child { border-bottom: none; }
-
-.contact-label {
-  min-width: 92px;
-  font-weight: 800;
-  opacity: .85;
-}
-
-.contact-value {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 10px;
-}
-
-.contact-link {
-  font-weight: 600;
-}
-
-.sep { opacity: .30; }
-
-/* Pills (used for profiles / code links) */
-.pill {
-  display: inline-block;
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,.12);
-  background: rgba(0,0,0,.03);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-.pill:hover {
-  border-color: var(--accent);
-  background: rgba(0,0,0,.05);
-}
-/* ===== Global font size (make body smaller) ===== */
-html { font-size: 15px; }   /* 你可以先试 15px；想再小就 14.5px/14px */
-body { line-height: 1.68; }  /* 你现在是 1.75，略松 */
-/* ===== Section headings styling ===== */
+/* Section headings */
 .page__content h2{
   font-weight: 850;
   padding-bottom: 0.35rem;
@@ -172,26 +49,173 @@ body { line-height: 1.68; }  /* 你现在是 1.75，略松 */
   font-weight: 800;
   margin-top: 1.0em;
 }
-/* ===== Subtle paper background ===== */
-body { background: #fcfcfd; }
-/* ===== Hero card polish ===== */
-.card{
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,.72);
+
+/* Paragraph/list rhythm */
+.page__content p{
+  margin: 0 0 0.85rem 0;
+}
+.page__content ul,
+.page__content ol{
+  margin: 0.35rem 0 0.9rem 1.2rem;
+}
+.page__content li{
+  margin: 0.25rem 0;
 }
 
-/* Optional: sticky hero card */
+/* ===== Links ===== */
+a{
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover{
+  filter: brightness(0.92);
+  text-decoration-thickness: 2px;
+}
+::selection{
+  background: var(--accent-soft);
+}
+
+/* ===== Layout width (paper-like) ===== */
+.page__content,
+.page__inner-wrap{
+  max-width: 860px;
+}
+
+/* ===== Buttons (Minimal Mistakes uses .btn) ===== */
+.btn,
+.btn--primary{
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.btn:hover,
+.btn--primary:hover{
+  filter: brightness(0.92);
+}
+
+/* ===== Nice horizontal rule ===== */
+hr{
+  border: 0;
+  height: 1px;
+  margin: 1.4rem 0;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,.18), transparent);
+}
+
+/* =========================
+   Hero card (top navigation)
+   ========================= */
 .card{
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-pad);
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+
+  /* glass effect (safe fallback if unsupported) */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  /* sticky behavior */
   position: sticky;
-  top: 12px;
+  top: 12px;     /* if you feel it blocks too much, set 56px */
   z-index: 20;
 }
-/* ===== Contact list spacing (scoped) ===== */
-#contact + h2 + ul,
-#contact ~ ul {
-  margin-top: 0.4rem;
+
+/* Hero first row line-height */
+.card > div:first-child{
+  line-height: 1.35;
 }
-/* ===== Fix: anchor is hidden under sticky header/card ===== */
-html {
-  scroll-padding-top: 120px; /* 先用 120px；如果卡片更高可调到 140 */
+
+/* =========================
+   Sidebar polish
+   ========================= */
+.author__avatar img{
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+.author__name{
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+.author__bio{
+  line-height: 1.55;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* =========================
+   Publications list helper (optional)
+   Use: <ul class="pub-list"> ... </ul>
+   ========================= */
+.pub-list{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.pub-list li{
+  margin: 0 0 14px 0;
+  padding-left: 18px;
+  text-indent: -18px;
+  line-height: 1.55;
+}
+
+/* =========================
+   Contact block (no card)
+   ========================= */
+.contact-block{
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.contact-row{
+  display: flex;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(0,0,0,.10);
+}
+.contact-row:last-child{
+  border-bottom: none;
+}
+
+.contact-label{
+  min-width: 92px;
+  font-weight: 800;
+  opacity: .85;
+}
+
+.contact-value{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.contact-link{
+  font-weight: 600;
+}
+
+.sep{
+  opacity: .30;
+}
+
+/* Pills (profiles / code links) */
+.pill{
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.12);
+  background: rgba(0,0,0,.03);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.pill:hover{
+  border-color: var(--accent);
+  background: rgba(0,0,0,.05);
 }
