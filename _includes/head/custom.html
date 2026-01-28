@@ -43,6 +43,53 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- ===== UI widgets: progress bar + back-to-top ===== -->
+<style>
+  /* Avoid FOUC if CSS loads later */
+  #scroll-progress, #back-to-top { display:none; }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // ---- progress bar ----
+    const bar = document.createElement("div");
+    bar.id = "scroll-progress";
+    document.body.appendChild(bar);
+
+    // ---- back to top ----
+    const btn = document.createElement("button");
+    btn.id = "back-to-top";
+    btn.type = "button";
+    btn.setAttribute("aria-label", "Back to top");
+    btn.innerHTML = "↑";
+    document.body.appendChild(btn);
+
+    const onScroll = () => {
+      const doc = document.documentElement;
+      const scrollTop = doc.scrollTop || document.body.scrollTop;
+      const scrollHeight = doc.scrollHeight - doc.clientHeight;
+      const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      bar.style.width = progress + "%";
+
+      // show/hide button
+      if (scrollTop > 480) btn.classList.add("show");
+      else btn.classList.remove("show");
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Make them visible after injection
+    bar.style.display = "block";
+    btn.style.display = "block";
+  });
+</script>
+<!-- ===== /UI widgets ===== -->
+
 <!-- end custom head snippets -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
