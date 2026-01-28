@@ -43,3 +43,32 @@ a {
   text-indent: -18px;
   line-height: 1.55;
 }
+/* ===== Accent color (brand) ===== */
+:root{
+  --accent: #2f6feb;   /* calm blue, GitHub-like */
+}
+
+/* Links */
+a {
+  color: var(--accent);
+}
+a:hover {
+  filter: brightness(0.9);
+}
+
+/* Buttons (Minimal Mistakes uses .btn) */
+.btn, .btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.btn:hover, .btn--primary:hover {
+  filter: brightness(0.92);
+}
+
+/* Nice horizontal rule */
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,.18), transparent);
+}
+
