@@ -191,3 +191,7 @@ body { background: #fcfcfd; }
 #contact ~ ul {
   margin-top: 0.4rem;
 }
+/* ===== Fix: anchor is hidden under sticky header/card ===== */
+html {
+  scroll-padding-top: 120px; /* 先用 120px；如果卡片更高可调到 140 */
+}
