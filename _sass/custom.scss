@@ -174,4 +174,16 @@ body { line-height: 1.68; }  /* 你现在是 1.75，略松 */
 }
 /* ===== Subtle paper background ===== */
 body { background: #fcfcfd; }
+/* ===== Hero card polish ===== */
+.card{
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.72);
+}
+
+/* Optional: sticky hero card */
+.card{
+  position: sticky;
+  top: 12px;
+  z-index: 20;
+}
 
