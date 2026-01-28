@@ -5,17 +5,17 @@
 /* ===== Brand / design tokens ===== */
 :root{
   /* Brand */
-  --accent: #2f6feb;              /* 主色：你也可换 #0f766e / #4f46e5 */
-  --accent-600: #1f6feb;          /* hover/active 更深一点 */
+  --accent: #2f6feb;                 /* main */
+  --accent-600: #1f6feb;             /* hover/active */
   --accent-soft: rgba(47,111,235,.12);
 
   /* Neutrals */
-  --bg: #fcfcfd;                  /* 页面背景（纸感） */
-  --panel: rgba(255,255,255,.78); /* 卡片/浮层背景 */
-  --text: rgba(15, 23, 42, .95);  /* 主文字（偏 slate） */
-  --muted: rgba(15, 23, 42, .70); /* 次文字 */
-  --border: rgba(15, 23, 42, .10);
-  --border-soft: rgba(15, 23, 42, .08);
+  --bg: #fcfcfd;                     /* paper-like background */
+  --panel: rgba(255,255,255,.78);    /* card / sticky panel */
+  --text: rgba(15,23,42,.95);        /* slate-ish */
+  --muted: rgba(15,23,42,.70);
+  --border: rgba(15,23,42,.10);
+  --border-soft: rgba(15,23,42,.08);
 
   /* Radius / Shadow */
   --radius: 16px;
@@ -27,54 +27,24 @@
   --pad-card: 16px 18px;
 }
 
-
-/* ===== Global font size + anchor offset (sticky card) ===== */
+/* ===== Base ===== */
 html{
-  font-size: 15px;          /* try 15px; if still big -> 14.5px or 14px */
-  scroll-padding-top: 120px; /* avoid anchor being hidden under sticky card */
+  font-size: 15px;           /* try 15px; smaller -> 14.5px / 14px */
+  scroll-padding-top: 160px; /* avoid anchors hidden under sticky hero */
 }
 
-/* ===== Background ===== */
 body{
-  background: #fcfcfd; /* subtle paper */
-}
-
-/* ===== Typography ===== */
-body{
+  background: var(--bg);
+  color: var(--text);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  line-height: 1.68;   /* tighter than 1.75 */
+  line-height: 1.68;
   letter-spacing: 0.1px;
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4{
-  letter-spacing: -0.2px;
-}
-
-/* Section headings */
-.page__content h2{
-  font-weight: 850;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid rgba(0,0,0,.08);
-  margin-top: 1.4em;
-}
-.page__content h3{
-  font-weight: 800;
-  margin-top: 1.0em;
-}
-
-/* Paragraph/list rhythm */
-.page__content p{
-  margin: 0 0 0.85rem 0;
-}
-.page__content ul,
-.page__content ol{
-  margin: 0.35rem 0 0.9rem 1.2rem;
-}
-.page__content li{
-  margin: 0.25rem 0;
-}
+/* selection highlight */
+::selection{ background: var(--accent-soft); }
 
 /* ===== Links ===== */
 a{
@@ -83,17 +53,44 @@ a{
   text-underline-offset: 3px;
 }
 a:hover{
-  filter: brightness(0.92);
+  color: var(--accent-600);
   text-decoration-thickness: 2px;
-}
-::selection{
-  background: var(--accent-soft);
 }
 
 /* ===== Layout width (paper-like) ===== */
 .page__content,
 .page__inner-wrap{
   max-width: 860px;
+}
+
+/* ===== Headings & rhythm ===== */
+h1, h2, h3, h4{ letter-spacing: -0.2px; }
+
+.page__content h2{
+  font-weight: 850;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border-soft);
+  margin-top: 1.4em;
+}
+
+.page__content h3{
+  font-weight: 800;
+  margin-top: 1.0em;
+  color: var(--text);
+}
+
+/* paragraph/list rhythm */
+.page__content p{ margin: 0 0 0.85rem 0; }
+.page__content ul,
+.page__content ol{ margin: 0.35rem 0 0.9rem 1.2rem; }
+.page__content li{ margin: 0.25rem 0; }
+
+/* ===== Horizontal rule ===== */
+hr{
+  border: 0;
+  height: 1px;
+  margin: 1.4rem 0;
+  background: linear-gradient(90deg, transparent, rgba(15,23,42,.18), transparent);
 }
 
 /* ===== Buttons (Minimal Mistakes uses .btn) ===== */
@@ -104,40 +101,43 @@ a:hover{
 }
 .btn:hover,
 .btn--primary:hover{
-  filter: brightness(0.92);
-}
-
-/* ===== Nice horizontal rule ===== */
-hr{
-  border: 0;
-  height: 1px;
-  margin: 1.4rem 0;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,.18), transparent);
+  background: var(--accent-600);
+  border-color: var(--accent-600);
 }
 
 /* =========================
-   Hero card (top navigation)
+   Card system (general)
    ========================= */
 .card{
-  border: 1px solid var(--card-border);
-  border-radius: var(--card-radius);
-  padding: var(--card-pad);
-  background: var(--card-bg);
-  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--pad-card);
+  background: var(--panel);
+  box-shadow: var(--shadow);
 
-  /* glass effect (safe fallback if unsupported) */
+  /* glass effect */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-
-  /* sticky behavior */
-  position: sticky;
-  top: 12px;     /* if you feel it blocks too much, set 56px */
-  z-index: 20;
 }
 
-/* Hero first row line-height */
+/* Make hero first row line-height slightly tighter */
 .card > div:first-child{
   line-height: 1.35;
+}
+
+/* =========================
+   Sticky Hero (only)
+   - Apply ONLY when the element has class "hero-card"
+   ========================= */
+.hero-card{
+  position: sticky;
+  top: 14px;     /* 10~18 looks good */
+  z-index: 50;
+}
+
+/* Mobile: usually disable sticky to avoid covering content */
+@media (max-width: 768px){
+  .hero-card{ position: static; }
 }
 
 /* =========================
@@ -145,19 +145,48 @@ hr{
    ========================= */
 .author__avatar img{
   border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+  box-shadow: var(--shadow-soft);
 }
+
 .author__name{
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: -0.2px;
 }
+
 .author__bio{
-  line-height: 1.55;
+  line-height: 1.50;
   font-size: 0.95rem;
-  opacity: 0.9;
+  opacity: 0.92;
+  color: var(--muted);
   text-align: justify;
   text-justify: inter-word;
 }
+
+/* =========================
+   Pills (profiles / nav chips)
+   ========================= */
+.pill{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.55);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--text);
+  box-shadow: 0 1px 0 rgba(15,23,42,.04);
+}
+
+.pill:hover{
+  border-color: rgba(47,111,235,.35);
+  background: rgba(47,111,235,.08);
+  color: var(--text);
+}
+
+.pill i{ opacity: .82; }
 
 /* =========================
    Publications list helper (optional)
@@ -190,15 +219,13 @@ hr{
   display: flex;
   gap: 14px;
   padding: 10px 0;
-  border-bottom: 1px dashed rgba(0,0,0,.10);
+  border-bottom: 1px dashed rgba(15,23,42,.12);
 }
-.contact-row:last-child{
-  border-bottom: none;
-}
+.contact-row:last-child{ border-bottom: none; }
 
 .contact-label{
   min-width: 92px;
-  font-weight: 800;
+  font-weight: 850;
   opacity: .85;
 }
 
@@ -210,106 +237,5 @@ hr{
   gap: 6px 10px;
 }
 
-.contact-link{
-  font-weight: 600;
-}
-
-.sep{
-  opacity: .30;
-}
-
-/* Pills (profiles / code links) */
-.pill{
-  display: inline-block;
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,.12);
-  background: rgba(0,0,0,.03);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-.pill:hover{
-  border-color: var(--accent);
-  background: rgba(0,0,0,.05);
-}
-/* =========================
-   Sticky Hero (only)
-   ========================= */
-
-/* 只让首页顶部那张 hero 卡片 sticky，不要全局 .card sticky */
-.hero-card{
-  position: sticky;
-  top: 14px;          /* 离顶部距离，可调 10~18 */
-  z-index: 50;        /* 确保在正文上方 */
-}
-
-/* 防止 sticky 覆盖时卡片边缘太“硬” */
-.hero-card{
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,.78);
-}
-
-/* 移动端通常不建议 sticky（屏幕太小会挡内容） */
-@media (max-width: 768px){
-  .hero-card{
-    position: static;
-  }
-}
-/* ===== Base ===== */
-html{
-  font-size: 15px;
-  scroll-padding-top: 160px; /* sticky hero 避免遮挡锚点 */
-}
-
-body{
-  background: var(--bg);
-  color: var(--text);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  line-height: 1.68;
-  letter-spacing: 0.1px;
-  text-rendering: optimizeLegibility;
-}
-
-/* Links */
-a{
-  color: var(--accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-a:hover{
-  color: var(--accent-600);
-  text-decoration-thickness: 2px;
-}
-
-/* Selection */
-::selection{ background: var(--accent-soft); }
-
-/* Horizontal rule */
-hr{
-  border: 0;
-  height: 1px;
-  margin: 1.4rem 0;
-  background: linear-gradient(90deg, transparent, rgba(15,23,42,.18), transparent);
-}
-/* ===== Headings & rhythm ===== */
-h1, h2, h3, h4{ letter-spacing: -0.2px; }
-
-.page__content h2{
-  font-weight: 850;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid var(--border-soft);
-  margin-top: 1.4em;
-}
-
-.page__content h3{
-  font-weight: 800;
-  margin-top: 1.0em;
-  color: var(--text);
-}
-
-.page__content p{ margin: 0 0 0.85rem 0; }
-.page__content ul, .page__content ol{ margin: 0.35rem 0 0.9rem 1.2rem; }
-.page__content li{ margin: 0.25rem 0; }
-
+.contact-link{ font-weight: 650; }
+.sep{ opacity: .30; }
