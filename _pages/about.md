@@ -44,36 +44,18 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ---
 
-<div class="contact-block">
+<a id="contact"></a>
+## Contact
 
-  <div class="contact-row">
-    <span class="contact-label">Email</span>
-    <span class="contact-value">
-      <a class="contact-link" href="mailto:gsx311381@gmail.com">gsx311381@gmail.com</a>
-      <span class="sep">·</span>
-      <a class="contact-link" href="mailto:S.Guo@hw.ac.uk">S.Guo@hw.ac.uk</a>
-      <span class="sep">·</span>
-      <a class="contact-link" href="mailto:guoshaoxiang@stu.ouc.edu.cn">guoshaoxiang@stu.ouc.edu.cn</a>
-    </span>
-  </div>
+- **Email**: [gsx311381@gmail.com](mailto:gsx311381@gmail.com) · [S.Guo@hw.ac.uk](mailto:S.Guo@hw.ac.uk) · [guoshaoxiang@stu.ouc.edu.cn](mailto:guoshaoxiang@stu.ouc.edu.cn)
 
-  <div class="contact-row">
-    <span class="contact-label">Profiles</span>
-    <span class="contact-value">
-      <a class="pill" href="#" target="_blank" rel="noopener">Google Scholar</a>
-      <a class="pill" href="#" target="_blank" rel="noopener">ORCID</a>
-      <a class="pill" href="#" target="_blank" rel="noopener">ResearchGate</a>
-    </span>
-  </div>
+- **Profiles**:
+  <a class="pill" href="#" target="_blank" rel="noopener">Google Scholar</a>
+  <a class="pill" href="#" target="_blank" rel="noopener">ORCID</a>
+  <a class="pill" href="#" target="_blank" rel="noopener">ResearchGate</a>
 
-  <div class="contact-row">
-    <span class="contact-label">Code</span>
-    <span class="contact-value">
-      <a class="pill" href="https://github.com/ShaoXiang23" target="_blank" rel="noopener">GitHub</a>
-    </span>
-  </div>
-
-</div>
+- **Code**:
+  <a class="pill" href="https://github.com/ShaoXiang23" target="_blank" rel="noopener">GitHub</a>
 
 ---
 
