@@ -309,3 +309,57 @@ hr{
   filter: brightness(0.98);
   border-color: rgba(47,111,235,.35);
 }
+/* =========================
+   Widgets: unified panels
+   ========================= */
+
+.widget-card{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow-soft);
+  padding: 14px 16px;
+  margin: 0.8rem 0 1.4rem 0;
+}
+
+.widget-title{
+  font-weight: 850;
+  letter-spacing: -0.2px;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.widget-subtitle{
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.widget-body{
+  margin-top: 0.8rem;
+}
+
+/* MapMyVisitors: keep it centered and responsive */
+.widget-visitormap{
+  overflow: hidden;
+}
+
+.widget-visitormap .widget-body{
+  display: flex;
+  justify-content: center;
+}
+
+/* If the embed creates an iframe or image, force it to fit nicely */
+.widget-visitormap iframe,
+.widget-visitormap img{
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* Slight hover polish */
+.widget-card:hover{
+  box-shadow: var(--shadow);
+  border-color: rgba(47,111,235,.20);
+}
