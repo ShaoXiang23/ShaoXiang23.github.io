@@ -240,3 +240,46 @@ hr{
 
 .contact-link{ font-weight: 650; }
 .sep{ opacity: .30; }
+
+/* =========================
+   Hero: auto-hide on scroll (JS toggles .hero--hide)
+   ========================= */
+
+.hero-card{
+  position: relative;     /* 不固定 */
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--pad-card);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  /* animation */
+  transition: transform .22s ease, opacity .22s ease, max-height .22s ease, margin .22s ease, padding .22s ease;
+  will-change: transform, opacity;
+
+  /* keep it above content while animating (not sticky) */
+  z-index: 2;
+}
+
+/* hidden state (when you scroll down) */
+.hero-card.hero--hide{
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+
+  /* make it take almost no space */
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-width: 0;
+}
+
+/* On small screens: still hide on scroll, but keep animation gentle */
+@media (max-width: 768px){
+  .hero-card{ transition-duration: .18s; }
+}
+
