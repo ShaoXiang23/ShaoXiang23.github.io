@@ -1,36 +1,43 @@
 /* =========================
-   Custom overrides (Guo)
+   Custom overrides (Guo) — v2
+   Theme tokens + unified visual language
    ========================= */
 
-/* ===== Brand / design tokens ===== */
+/* -------------------------
+   1) Design tokens
+   ------------------------- */
 :root{
   /* Brand */
-  --accent: #2f6feb;                 /* main */
-  --accent-600: #1f6feb;             /* hover/active */
+  --accent: #2f6feb;              /* main */
+  --accent-600: #1f6feb;          /* hover */
   --accent-soft: rgba(47,111,235,.12);
 
   /* Neutrals */
-  --bg: #fcfcfd;                     /* paper-like background */
-  --panel: rgba(255,255,255,.78);    /* card / sticky panel */
-  --text: rgba(15,23,42,.95);        /* slate-ish */
-  --muted: rgba(15,23,42,.70);
-  --border: rgba(15,23,42,.10);
-  --border-soft: rgba(15,23,42,.08);
+  --bg: #fcfcfd;                  /* page background */
+  --panel: rgba(255,255,255,.86); /* panels/cards */
+  --text: rgba(15, 23, 42, .92);  /* main text */
+  --muted: rgba(15, 23, 42, .70); /* secondary text */
+  --muted-2: rgba(15, 23, 42, .55);
 
-  /* Radius / Shadow */
+  --border: rgba(15, 23, 42, .10);
+  --border-soft: rgba(15, 23, 42, .08);
+
+  /* Radius / shadows */
   --radius: 16px;
   --radius-pill: 999px;
   --shadow: 0 10px 28px rgba(15,23,42,.10);
   --shadow-soft: 0 6px 18px rgba(15,23,42,.08);
 
-  /* Spacing */
-  --pad-card: 16px 18px;
+  /* Layout width */
+  --content-max: 860px;
 }
 
-/* ===== Base ===== */
+/* -------------------------
+   2) Base: size / background / anchors
+   ------------------------- */
 html{
-  font-size: 15px;           /* try 15px; smaller -> 14.5px / 14px */
-  scroll-padding-top: 160px; /* avoid anchors hidden under sticky hero */
+  font-size: 15px;               /* 14.5px/14px if you want smaller */
+  scroll-padding-top: 120px;     /* anchor offset for hero block */
 }
 
 body{
@@ -38,15 +45,44 @@ body{
   color: var(--text);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  line-height: 1.68;
+  line-height: 1.65;
   letter-spacing: 0.1px;
   text-rendering: optimizeLegibility;
 }
 
-/* selection highlight */
 ::selection{ background: var(--accent-soft); }
 
-/* ===== Links ===== */
+/* Slightly “paper-like” content width */
+.page__content,
+.page__inner-wrap{
+  max-width: var(--content-max);
+}
+
+/* -------------------------
+   3) Headings / section rhythm
+   ------------------------- */
+h1,h2,h3,h4{ letter-spacing: -0.2px; }
+
+.page__content h2{
+  font-weight: 850;
+  padding-bottom: .38rem;
+  border-bottom: 1px solid var(--border-soft);
+  margin-top: 1.35em;
+}
+
+.page__content h3{
+  font-weight: 800;
+  margin-top: 1.05em;
+}
+
+.page__content p{ margin: 0 0 .85rem 0; }
+.page__content ul,
+.page__content ol{ margin: .35rem 0 .9rem 1.2rem; }
+.page__content li{ margin: .25rem 0; }
+
+/* -------------------------
+   4) Links (global language)
+   ------------------------- */
 a{
   color: var(--accent);
   text-decoration-thickness: 1px;
@@ -57,142 +93,155 @@ a:hover{
   text-decoration-thickness: 2px;
 }
 
-/* ===== Layout width (paper-like) ===== */
-.page__content,
-.page__inner-wrap{
-  max-width: 860px;
-}
-
-/* ===== Headings & rhythm ===== */
-h1, h2, h3, h4{ letter-spacing: -0.2px; }
-
-.page__content h2{
-  font-weight: 850;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid var(--border-soft);
-  margin-top: 1.4em;
-}
-
-.page__content h3{
-  font-weight: 800;
-  margin-top: 1.0em;
-  color: var(--text);
-}
-
-/* paragraph/list rhythm */
-.page__content p{ margin: 0 0 0.85rem 0; }
-.page__content ul,
-.page__content ol{ margin: 0.35rem 0 0.9rem 1.2rem; }
-.page__content li{ margin: 0.25rem 0; }
-
-/* ===== Horizontal rule ===== */
-hr{
-  border: 0;
-  height: 1px;
-  margin: 1.4rem 0;
-  background: linear-gradient(90deg, transparent, rgba(15,23,42,.18), transparent);
-}
-
-/* ===== Buttons (Minimal Mistakes uses .btn) ===== */
+/* -------------------------
+   5) Buttons (Minimal Mistakes .btn)
+   ------------------------- */
 .btn,
 .btn--primary{
   background: var(--accent);
   border-color: var(--accent);
+  box-shadow: 0 6px 16px rgba(47,111,235,.18);
 }
 .btn:hover,
 .btn--primary:hover{
   background: var(--accent-600);
   border-color: var(--accent-600);
+  box-shadow: 0 8px 18px rgba(47,111,235,.22);
 }
 
-/* =========================
-   Card system (general)
-   ========================= */
-.card{
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: var(--pad-card);
-  background: var(--panel);
-  box-shadow: var(--shadow);
+/* -------------------------
+   6) Divider / HR (consistent)
+   ------------------------- */
+hr{
+  border: 0;
+  height: 1px;
+  margin: 1.35rem 0;
+  background: linear-gradient(90deg, transparent, rgba(15,23,42,.18), transparent);
+}
 
-  /* glass effect */
+/* -------------------------
+   7) Hero card (top nav block)
+   NOTE: only affects .hero-card
+   ------------------------- */
+.hero-card{
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  background: var(--panel);
+  box-shadow: var(--shadow-soft);
+
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+
+  /* NOT sticky in方案2：滚动后自然消失（你现在想要的） */
+  position: static;
 }
 
-/* Make hero first row line-height slightly tighter */
-.card > div:first-child{
-  line-height: 1.35;
-}
-
-/* =========================
-   Sticky Hero (only)
-   - Apply ONLY when the element has class "hero-card"
-   ========================= */
-.hero-card{
-  // position: sticky;
-  // top: 14px;     /* 10~18 looks good */
-  // z-index: 50;
-   position: static;
-}
-
-/* Mobile: usually disable sticky to avoid covering content */
-@media (max-width: 768px){
-  .hero-card{ position: static; }
-}
-
-/* =========================
-   Sidebar polish
-   ========================= */
-.author__avatar img{
-  border-radius: 16px;
-  box-shadow: var(--shadow-soft);
-}
-
-.author__name{
-  font-weight: 850;
-  letter-spacing: -0.2px;
-}
-
-.author__bio{
-  line-height: 1.50;
-  font-size: 0.95rem;
-  opacity: 0.92;
+/* Hero subtitle line */
+.hero-card > div:first-child{
   color: var(--muted);
-  text-align: justify;
-  text-justify: inter-word;
+  font-weight: 650;
 }
 
-/* =========================
-   Pills (profiles / nav chips)
-   ========================= */
+/* Hero links and icons */
+.hero-card a{
+  color: var(--accent);
+  font-weight: 750;
+}
+.hero-card a:hover{ color: var(--accent-600); }
+
+.hero-card i,
+.hero-card svg{
+  color: var(--muted-2);
+  fill: var(--muted-2);
+}
+
+/* -------------------------
+   8) Pills (Profiles / nav pills / etc.)
+   A unified “chip” component
+   ------------------------- */
 .pill{
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 12px;
+  padding: 7px 12px;
   border-radius: var(--radius-pill);
   border: 1px solid var(--border);
-  background: rgba(255,255,255,.55);
+  background: rgba(255,255,255,.92);
   text-decoration: none;
-  font-weight: 800;
-  font-size: 0.95rem;
-  color: var(--text);
-  box-shadow: 0 1px 0 rgba(15,23,42,.04);
+  font-weight: 750;
+  font-size: .95rem;
+  color: var(--accent);
+  box-shadow: 0 4px 10px rgba(15,23,42,.06);
 }
 
 .pill:hover{
   border-color: rgba(47,111,235,.35);
   background: rgba(47,111,235,.08);
-  color: var(--text);
+  box-shadow: 0 6px 14px rgba(47,111,235,.12);
 }
 
-.pill i{ opacity: .82; }
+/* -------------------------
+   9) Sidebar polish
+   ------------------------- */
+.author__avatar img{
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(15,23,42,.12);
+}
+.author__name{
+  font-weight: 850;
+  letter-spacing: -0.2px;
+}
+.author__bio{
+  line-height: 1.55;
+  font-size: 0.95rem;
+  opacity: 0.90;
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--muted);
+}
 
-/* =========================
-   Publications list helper (optional)
-   Use: <ul class="pub-list"> ... </ul>
-   ========================= */
+/* -------------------------
+   10) Contact block (no card)
+   ------------------------- */
+.contact-block{
+  margin: .5rem 0 1.25rem 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.contact-row{
+  display: flex;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(15,23,42,.10);
+}
+.contact-row:last-child{ border-bottom: none; }
+
+.contact-label{
+  min-width: 92px;
+  font-weight: 850;
+  color: var(--muted);
+}
+
+.contact-value{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.contact-link{
+  font-weight: 650;
+}
+.sep{ opacity: .30; }
+
+/* -------------------------
+   11) Optional: Publication list helper
+   ------------------------- */
 .pub-list{
   list-style: none;
   padding-left: 0;
@@ -205,125 +254,11 @@ hr{
   line-height: 1.55;
 }
 
-/* =========================
-   Contact block (no card)
-   ========================= */
-.contact-block{
-  margin: 0.5rem 0 1.5rem 0;
-  padding: 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
-}
-
-.contact-row{
-  display: flex;
-  gap: 14px;
-  padding: 10px 0;
-  border-bottom: 1px dashed rgba(15,23,42,.12);
-}
-.contact-row:last-child{ border-bottom: none; }
-
-.contact-label{
-  min-width: 92px;
-  font-weight: 850;
-  opacity: .85;
-}
-
-.contact-value{
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 10px;
-}
-
-.contact-link{ font-weight: 650; }
-.sep{ opacity: .30; }
-
-/* =========================
-   Hero: auto-hide on scroll (JS toggles .hero--hide)
-   ========================= */
-
-.hero-card{
-  position: relative;     /* 不固定 */
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: var(--pad-card);
-  background: var(--panel);
-  box-shadow: var(--shadow);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-
-  /* animation */
-  transition: transform .22s ease, opacity .22s ease, max-height .22s ease, margin .22s ease, padding .22s ease;
-  will-change: transform, opacity;
-
-  /* keep it above content while animating (not sticky) */
-  z-index: 2;
-}
-
-/* hidden state (when you scroll down) */
-.hero-card.hero--hide{
-  opacity: 0;
-  transform: translateY(-10px);
-  pointer-events: none;
-
-  /* make it take almost no space */
-  max-height: 0;
-  overflow: hidden;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  border-width: 0;
-}
-
-/* On small screens: still hide on scroll, but keep animation gentle */
+/* -------------------------
+   12) Mobile tweaks
+   ------------------------- */
 @media (max-width: 768px){
-  .hero-card{ transition-duration: .18s; }
+  html{ font-size: 14.5px; }
+  .contact-row{ flex-direction: column; gap: 6px; }
+  .contact-label{ min-width: 0; }
 }
-/* =========================
-   Hero tone: lighter + consistent icon/link color
-   ========================= */
-
-/* Hero itself: lighter panel */
-.hero-card{
-  background: rgba(255,255,255,.86);           /* 比 .78 更白 */
-  border-color: rgba(15,23,42,.08);
-  box-shadow: 0 10px 24px rgba(15,23,42,.08);  /* 更柔 */
-}
-
-/* Hero title line（那一行 Postdoctoral ...）变浅一点 */
-.hero-card > div:first-child{
-  color: rgba(15,23,42,.72);
-  font-weight: 650;
-}
-
-/* Hero 内部所有链接：不要变“黑”，保持主色 */
-.hero-card a{
-  color: var(--accent);
-  font-weight: 750;
-}
-
-/* Hero 内部 icon（FontAwesome svg/i）统一成偏浅的灰蓝 */
-.hero-card i,
-.hero-card svg{
-  color: rgba(15,23,42,.55);
-  fill: rgba(15,23,42,.55);
-}
-
-/* Pills/按钮容器如果你是用 .pill 或者类似类名：让它更轻 */
-.hero-card .pill,
-.hero-card .nav-pill,
-.hero-card a.pill{
-  background: rgba(255,255,255,.90);
-  border-color: rgba(15,23,42,.10);
-  box-shadow: 0 4px 10px rgba(15,23,42,.06);
-}
-
-/* Hover：强调主色，不要变黑 */
-.hero-card a:hover{
-  color: var(--accent-600);
-  text-decoration-thickness: 2px;
-}
-
