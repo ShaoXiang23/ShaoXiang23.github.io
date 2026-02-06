@@ -22,6 +22,7 @@ redirect_from:
     <a class="pill" href="#projects"><i class="fas fa-code"></i> Projects</a>
     <a class="pill" href="#honors"><i class="fas fa-award"></i> Honors</a>
     <a class="pill" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+    <a class="pill" href="#visitors"><i class="fas fa-globe"></i> Visitors</a>
   </div>
 </div>
 
