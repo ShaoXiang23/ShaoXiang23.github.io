@@ -49,12 +49,12 @@ My research interests broadly include computer vision, machine learning, deep le
 <a id="contact"></a>
 ## Contact
 
-- **Email**: [gsx311381@gmail.com](mailto:gsx311381@gmail.com) · [S.Guo@hw.ac.uk](mailto:S.Guo@hw.ac.uk) · [guoshaoxiang@stu.ouc.edu.cn](mailto:guoshaoxiang@stu.ouc.edu.cn)
+- **Email**: [gsx311381@gmail.com](mailto:gsx311381@gmail.com) · [guoshaoxiang@stu.ouc.edu.cn](mailto:guoshaoxiang@stu.ouc.edu.cn)
 
 - **Profiles**:
-  <a class="pill" href="#" target="_blank" rel="noopener">Google Scholar</a>
-  <a class="pill" href="#" target="_blank" rel="noopener">ORCID</a>
-  <a class="pill" href="#" target="_blank" rel="noopener">ResearchGate</a>
+  <a class="pill" href="https://scholar.google.com/citations?user=dtqh5RQAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+  <a class="pill" href="https://orcid.org/0000-0001-6836-284X" target="_blank" rel="noopener">ORCID</a>
+  <a class="pill" href="https://www.researchgate.net/profile/Shaoxiang-Guo" target="_blank" rel="noopener">ResearchGate</a>
 
 - **Code**:
   <a class="pill" href="https://github.com/ShaoXiang23" target="_blank" rel="noopener">GitHub</a>
