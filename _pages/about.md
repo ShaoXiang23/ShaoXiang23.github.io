@@ -18,6 +18,7 @@ redirect_from:
     <a class="pill" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
     <a class="pill" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
     <a class="pill" href="#publications"><i class="fas fa-book"></i> Publications</a>
+    <a class="pill" href="#demo"><i class="fas fa-play-circle"></i> Demo</a>
     <a class="pill" href="#projects"><i class="fas fa-code"></i> Projects</a>
     <a class="pill" href="#honors"><i class="fas fa-award"></i> Honors</a>
     <a class="pill" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
@@ -165,8 +166,71 @@ My research interests broadly include computer vision, machine learning, deep le
 
 ---
 
+<a id="demo"></a>
+## Demo
+
+<p>
+  Selected system and research demos. Click a card to open the video.
+</p>
+
+<div class="demo-grid">
+
+  <a class="demo-card" href="https://www.youtube.com/watch?v=Y2_CL1JyBng" target="_blank" rel="noopener">
+    <div class="demo-tag">YouTube</div>
+    <div class="demo-title">Automatic Laser Resonator Alignment</div>
+    <div class="demo-desc">
+      A real-world demonstration of a learning-based, coarse-to-fine alignment system for optical resonators,
+      validated on hardware with beam-profile feedback.
+    </div>
+  </a>
+
+  <a class="demo-card" href="https://drive.google.com/file/d/1b5HXJzWn8SYyl-6T-VeqX24cm6BgwGzr/view" target="_blank" rel="noopener">
+    <div class="demo-tag">Google Drive</div>
+    <div class="demo-title">Monocular Two-Hand 3D Reconstruction</div>
+    <div class="demo-desc">
+      Reconstructing 3D geometry of two hands from a single RGB stream, focusing on camera-space structure and robust interaction handling.
+    </div>
+  </a>
+
+  <a class="demo-card" href="https://drive.google.com/file/d/1hTFWWoC1p27ofxgKCUKKnrLJcgV7j2TY/view" target="_blank" rel="noopener">
+    <div class="demo-tag">Google Drive</div>
+    <div class="demo-title">Monocular 3D Hand Pose Estimation</div>
+    <div class="demo-desc">
+      A monocular 3D hand pose estimation pipeline featuring geometry-aware representations and robust inference.
+    </div>
+  </a>
+
+  <a class="demo-card" href="https://drive.google.com/file/d/1yS9MTQ0KTx4AjR8lAG2_QrUkk21S3WvJ/view" target="_blank" rel="noopener">
+    <div class="demo-tag">Google Drive</div>
+    <div class="demo-title">Vision-Based Gesture Recognition</div>
+    <div class="demo-desc">
+      A practical gesture recognition system for human–computer interaction, designed for stable real-time performance.
+    </div>
+  </a>
+
+  <a class="demo-card" href="https://drive.google.com/file/d/19aA9ruK_JbwvVduVwIFJ4at8P6SWwgWB/view" target="_blank" rel="noopener">
+    <div class="demo-tag">Google Drive</div>
+    <div class="demo-title">Gait Recognition System</div>
+    <div class="demo-desc">
+      A gait recognition demo leveraging pose-guided multi-modal cues, targeting robust identification under appearance variations.
+    </div>
+  </a>
+
+  <a class="demo-card" href="https://drive.google.com/file/d/1Lx5mv-4OCsTzcO0y0ytb4DF8Zr952TL5/view" target="_blank" rel="noopener">
+    <div class="demo-tag">Google Drive</div>
+    <div class="demo-title">Humanoid Robot Motion Imitation</div>
+    <div class="demo-desc">
+      Motion imitation on a humanoid platform, integrating perception and control to reproduce human-like actions.
+    </div>
+  </a>
+
+</div>
+
+---
+
 <a id="projects"></a>
-## Projects / Demos
+
+## Projects
 
 - Beam-profile dataset construction for optical alignment (image collection, pairing strategy, labeling, validation)
 - Real-world laser resonator alignment system (coarse-to-fine regression + iterative refinement, hardware-in-the-loop experiments)
