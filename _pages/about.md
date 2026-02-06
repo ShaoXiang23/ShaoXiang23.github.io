@@ -176,52 +176,88 @@ My research interests broadly include computer vision, machine learning, deep le
 
 <div class="demo-grid">
 
+  <!-- 1) Laser resonator alignment -->
   <a class="demo-card" href="https://www.youtube.com/watch?v=Y2_CL1JyBng" target="_blank" rel="noopener">
-    <div class="demo-tag">YouTube</div>
-    <div class="demo-title">Automatic Laser Resonator Alignment</div>
-    <div class="demo-desc">
-      A real-world demonstration of a learning-based, coarse-to-fine alignment system for optical resonators,
-      validated on hardware with beam-profile feedback.
+    <div class="demo-media">
+      <img class="demo-thumb" src="{{ '/images/demo1.png' | relative_url }}" alt="Demo: Automatic Laser Resonator Alignment">
+    </div>
+    <div class="demo-body">
+      <div class="demo-tag">YouTube</div>
+      <div class="demo-title">Automatic Laser Resonator Alignment</div>
+      <div class="demo-desc">
+        A real-world demonstration of a learning-based, coarse-to-fine alignment system for optical resonators,
+        validated on hardware with beam-profile feedback.
+      </div>
     </div>
   </a>
 
+  <!-- 2) Monocular two-hand 3D reconstruction -->
   <a class="demo-card" href="https://drive.google.com/file/d/1b5HXJzWn8SYyl-6T-VeqX24cm6BgwGzr/view" target="_blank" rel="noopener">
-    <div class="demo-tag">Google Drive</div>
-    <div class="demo-title">Monocular Two-Hand 3D Reconstruction</div>
-    <div class="demo-desc">
-      Reconstructing 3D geometry of two hands from a single RGB stream, focusing on camera-space structure and robust interaction handling.
+    <div class="demo-media">
+      <img class="demo-thumb" src="{{ '/images/demo2.png' | relative_url }}" alt="Demo: Monocular Two-Hand 3D Reconstruction">
+    </div>
+    <div class="demo-body">
+      <div class="demo-tag">Google Drive</div>
+      <div class="demo-title">Monocular Two-Hand 3D Reconstruction</div>
+      <div class="demo-desc">
+        Reconstructing 3D geometry of two hands from a single RGB stream, focusing on camera-space structure and robust interaction handling.
+      </div>
     </div>
   </a>
 
+  <!-- 3) Hand pose estimation -->
   <a class="demo-card" href="https://drive.google.com/file/d/1hTFWWoC1p27ofxgKCUKKnrLJcgV7j2TY/view" target="_blank" rel="noopener">
-    <div class="demo-tag">Google Drive</div>
-    <div class="demo-title">Monocular 3D Hand Pose Estimation</div>
-    <div class="demo-desc">
-      A monocular 3D hand pose estimation pipeline featuring geometry-aware representations and robust inference.
+    <div class="demo-media">
+      <img class="demo-thumb" src="{{ '/images/demo3.png' | relative_url }}" alt="Demo: Monocular 3D Hand Pose Estimation">
+    </div>
+    <div class="demo-body">
+      <div class="demo-tag">Google Drive</div>
+      <div class="demo-title">Monocular 3D Hand Pose Estimation</div>
+      <div class="demo-desc">
+        A monocular 3D hand pose estimation pipeline featuring geometry-aware representations and robust inference.
+      </div>
     </div>
   </a>
 
+  <!-- 4) Gesture recognition -->
   <a class="demo-card" href="https://drive.google.com/file/d/1yS9MTQ0KTx4AjR8lAG2_QrUkk21S3WvJ/view" target="_blank" rel="noopener">
-    <div class="demo-tag">Google Drive</div>
-    <div class="demo-title">Vision-Based Gesture Recognition</div>
-    <div class="demo-desc">
-      A practical gesture recognition system for human–computer interaction, designed for stable real-time performance.
+    <div class="demo-media">
+      <img class="demo-thumb" src="{{ '/images/demo4.png' | relative_url }}" alt="Demo: Vision-Based Gesture Recognition">
+    </div>
+    <div class="demo-body">
+      <div class="demo-tag">Google Drive</div>
+      <div class="demo-title">Vision-Based Gesture Recognition</div>
+      <div class="demo-desc">
+        A practical gesture recognition system for human–computer interaction, designed for stable real-time performance.
+      </div>
     </div>
   </a>
 
+  <!-- 5) Gait recognition system -->
   <a class="demo-card" href="https://drive.google.com/file/d/19aA9ruK_JbwvVduVwIFJ4at8P6SWwgWB/view" target="_blank" rel="noopener">
-    <div class="demo-tag">Google Drive</div>
-    <div class="demo-title">Gait Recognition System</div>
-    <div class="demo-desc">
-      A gait recognition demo leveraging pose-guided multi-modal cues, targeting robust identification under appearance variations.
+    <div class="demo-media">
+      <img class="demo-thumb" src="{{ '/images/demo5.png' | relative_url }}" alt="Demo: Gait Recognition System">
+    </div>
+    <div class="demo-body">
+      <div class="demo-tag">Google Drive</div>
+      <div class="demo-title">Gait Recognition System</div>
+      <div class="demo-desc">
+        A gait recognition demo leveraging pose-guided multi-modal cues, targeting robust identification under appearance variations.
+      </div>
     </div>
   </a>
 
+  <!-- 6) Humanoid robot imitation -->
   <a class="demo-card" href="https://drive.google.com/file/d/1Lx5mv-4OCsTzcO0y0ytb4DF8Zr952TL5/view" target="_blank" rel="noopener">
-    <div class="demo-tag">Google Drive</div>
-    <div class="demo-title">Humanoid Robot Motion Imitation</div>
-    <div class="demo-desc">
-      Motion imitation on a humanoid platform, integrating perception and control to reproduce human-like actions.
+    <div class="demo-media">
+      <img class="demo-thumb" src="{{ '/images/demo6.png' | relative_url }}" alt="Demo: Humanoid Robot Motion Imitation">
+    </div>
+    <div class="demo-body">
+      <div class="demo-tag">Google Drive</div>
+      <div class="demo-title">Humanoid Robot Motion Imitation</div>
+      <div class="demo-desc">
+        Motion imitation on a humanoid platform, integrating perception and control to reproduce human-like actions.
+      </div>
     </div>
   </a>
 
