@@ -29,7 +29,7 @@
   --shadow-soft: 0 6px 18px rgba(15,23,42,.08);
 
   /* Layout width */
-  --content-max: 860px;
+  --content-max: 1040px;
 
   /* Section header tokens (h2) */
   --sec-bg: rgba(47,111,235,.04);
@@ -71,6 +71,14 @@ body{
 .page__content ul,
 .page__content ol{ margin: .35rem 0 .9rem 1.2rem; }
 .page__content li{ margin: .25rem 0; }
+
+/* Wider content only on large screens */
+@media (min-width: 1200px){
+  :root{ --content-max: 1080px; }   /* 或 1120px */
+}
+@media (min-width: 1600px){
+  :root{ --content-max: 1160px; }   /* 超宽屏再吃一点空白 */
+}
 
 /* -------------------------------------------------
    4) Links (global language)
