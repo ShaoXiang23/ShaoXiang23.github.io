@@ -457,51 +457,59 @@ hr{
 }
 
 /* =========================
-   Section headings (Option A)
+   Premium Section Headings
+   Apply to: Markdown "##" (h2)
    ========================= */
-// .page__content h2{
-//   position: relative;
-//   margin: 2.0rem 0 1.0rem 0;
-//   padding-bottom: .55rem;
-//   font-weight: 900;
-//   letter-spacing: -0.3px;
-//   border-bottom: 1px solid var(--border-soft);
-// }
 
-// .page__content h2::after{
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: -1px;
-//   width: 64px;
-//   height: 3px;
-//   border-radius: 999px;
-//   background: var(--accent);
-//   opacity: .9;
-// }
-
-/* =========================
-   Section headings (Option B)
-   ========================= */
 .page__content h2{
-  position: relative;
-  margin: 2.1rem 0 1.05rem 0;
-  padding: .55rem .85rem .55rem 1.05rem;
+  /* spacing rhythm */
+  margin: 2.2rem 0 1.0rem 0;
+  padding: 0.75rem 1.0rem 0.75rem 1.15rem;
+
+  /* type */
   font-weight: 950;
   letter-spacing: -0.35px;
+
+  /* card-like look */
   border-radius: 14px;
-  background: rgba(47,111,235,.08);
-  border: 1px solid rgba(47,111,235,.18);
+  background: rgba(47,111,235,.06);          /* uses your accent vibe */
+  border: 1px solid rgba(15,23,42,.08);
+
+  /* remove old underline style if any */
+  border-bottom: none;
+  position: relative;
 }
 
+/* left accent bar */
 .page__content h2::before{
   content: "";
   position: absolute;
-  left: .55rem;
+  left: 0.55rem;
   top: 50%;
   transform: translateY(-50%);
   width: 6px;
-  height: 60%;
+  height: 62%;
   border-radius: 999px;
   background: var(--accent);
+  opacity: .95;
 }
+
+/* subtle top divider line between sections (optional but classy) */
+.page__content h2{
+  box-shadow: 0 8px 18px rgba(15,23,42,.06);
+}
+
+/* keep h3 clean but strong */
+.page__content h3{
+  margin: 1.25rem 0 .65rem 0;
+  font-weight: 900;
+  letter-spacing: -0.25px;
+}
+
+/* If you feel h2 background is too obvious, reduce it */
+@media (prefers-color-scheme: light){
+  .page__content h2{
+    background: rgba(47,111,235,.045);
+  }
+}
+
