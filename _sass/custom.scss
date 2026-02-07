@@ -1,6 +1,6 @@
 /* =========================
-   Custom overrides (Guo) — v2 (cleaned)
-   Theme tokens + unified visual language
+   Custom overrides (Guo) — v3 (final replaceable)
+   Wider layout + unified tokens + clean premium UI
    ========================= */
 
 /* -------------------------------------------------
@@ -8,15 +8,15 @@
    ------------------------------------------------- */
 :root{
   /* Brand */
-  --accent: #2f6feb;                 /* main */
-  --accent-600: #1f6feb;             /* hover */
+  --accent: #2f6feb;
+  --accent-600: #1f6feb;
   --accent-soft: rgba(47,111,235,.12);
 
   /* Neutrals */
-  --bg: #fcfcfd;                     /* page background */
-  --panel: rgba(255,255,255,.86);    /* panels/cards */
-  --text: rgba(15, 23, 42, .92);     /* main text */
-  --muted: rgba(15, 23, 42, .70);    /* secondary text */
+  --bg: #fcfcfd;
+  --panel: rgba(255,255,255,.86);
+  --text: rgba(15, 23, 42, .92);
+  --muted: rgba(15, 23, 42, .70);
   --muted-2: rgba(15, 23, 42, .55);
 
   --border: rgba(15, 23, 42, .10);
@@ -28,22 +28,22 @@
   --shadow: 0 10px 28px rgba(15,23,42,.10);
   --shadow-soft: 0 6px 18px rgba(15,23,42,.08);
 
-  /* Layout width */
-  --content-max: 1383px;
+  /* ===== Layout width (YOUR REQUEST) ===== */
+  --content-max: 1383px; /* ✅ target overall readable width */
 
   /* Section header tokens (h2) */
-  --sec-bg: rgba(47,111,235,.04);
-  --sec-border: rgba(15,23,42,.08);
   --sec-text: rgba(15,23,42,.92);
-  --sec-bar: var(--accent);
+  --sec-border: rgba(15,23,42,.10);
+  --sec-rule: rgba(15,23,42,.08);
+  --sec-bg: rgba(47,111,235,.03); /* set transparent if you want no bg */
 }
 
 /* -------------------------------------------------
    2) Base: size / background / anchors
    ------------------------------------------------- */
 html{
-  font-size: 15px;                  /* 14.5px/14px if you want smaller */
-  scroll-padding-top: 120px;        /* anchor offset (hero not sticky in scheme 2) */
+  font-size: 15px;            /* 14.5/14 if you want smaller */
+  scroll-padding-top: 110px;  /* anchor offset (hero is NOT sticky in scheme 2) */
 }
 
 body{
@@ -58,30 +58,53 @@ body{
 
 ::selection{ background: var(--accent-soft); }
 
-/* Content width (paper-like) */
-.page__content,
+/* -------------------------------------------------
+   3) ✅ Widen the RIGHT text area (theme containers)
+   -------------------------------------------------
+   Minimal Mistakes may constrain width at different wrappers.
+   We override several common wrappers to ensure it actually expands.
+   ------------------------------------------------- */
+#main,
+.initial-content,
+.page,
+.archive,
 .page__inner-wrap{
-  max-width: var(--content-max);
+  max-width: var(--content-max) !important;
+}
+
+/* IMPORTANT:
+   Do NOT cap .page__content with max-width.
+   Let the theme compute content width (sidebar + content) naturally.
+*/
+.page__content{
+  max-width: none !important;
+}
+
+/* Sometimes theme adds padding that visually wastes right space */
+.page__inner-wrap{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Optional: slightly reduce right gutter on wide screens */
+@media (min-width: 1200px){
+  .page__content{
+    padding-right: 0.5rem;
+  }
 }
 
 /* -------------------------------------------------
-   3) Typography rhythm (p / list)
+   4) Typography rhythm (p / list)
    ------------------------------------------------- */
 .page__content p{ margin: 0 0 .85rem 0; }
 .page__content ul,
 .page__content ol{ margin: .35rem 0 .9rem 1.2rem; }
 .page__content li{ margin: .25rem 0; }
 
-/* Wider content only on large screens */
-@media (min-width: 1200px){
-  :root{ --content-max: 1080px; }   /* 或 1120px */
-}
-@media (min-width: 1600px){
-  :root{ --content-max: 1160px; }   /* 超宽屏再吃一点空白 */
-}
+h1,h2,h3,h4{ letter-spacing: -0.2px; }
 
 /* -------------------------------------------------
-   4) Links (global language)
+   5) Links (global language)
    ------------------------------------------------- */
 a{
   color: var(--accent);
@@ -94,7 +117,7 @@ a:hover{
 }
 
 /* -------------------------------------------------
-   5) Buttons (Minimal Mistakes .btn)
+   6) Buttons (Minimal Mistakes .btn)
    ------------------------------------------------- */
 .btn,
 .btn--primary{
@@ -110,7 +133,7 @@ a:hover{
 }
 
 /* -------------------------------------------------
-   6) Divider / HR (consistent)
+   7) Divider / HR (consistent)
    ------------------------------------------------- */
 hr{
   border: 0;
@@ -120,59 +143,97 @@ hr{
 }
 
 /* -------------------------------------------------
-   7) Section headings (h2 / h3) — premium style
-   (Overrides any earlier Minimal Mistakes defaults)
+   8) Section headings (h2 / h3) — clean “print/academic” style
+   + icons by anchor id
    ------------------------------------------------- */
-h1,h2,h3,h4{ letter-spacing: -0.2px; }
 
+/* Base h2 (no card-glass, cleaner) */
 .page__content h2{
-  margin: 2.1rem 0 1.0rem 0;
-  padding: 0.78rem 1.0rem 0.78rem 1.55rem;
+  margin: 2.0rem 0 0.9rem 0;
 
-  font-weight: 950;
-  letter-spacing: -0.35px;
+  /* icon space on the left */
+  padding: 0.55rem 0.9rem 0.55rem 2.45rem;
+
+  font-weight: 900;
+  letter-spacing: -0.25px;
   color: var(--sec-text);
 
-  border-radius: 8px;              /* set 0px if you want hard rectangle */
   background: var(--sec-bg);
   border: 1px solid var(--sec-border);
+  border-radius: 6px;     /* set 0 for sharp rectangle */
+  box-shadow: none;
+  backdrop-filter: none;
 
   position: relative;
-  box-shadow: 0 6px 14px rgba(15,23,42,.05);
 }
 
-.page__content h2::before{
-  content: "";
-  position: absolute;
-  left: 0.92rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 6px;
-  height: 58%;
-  border-radius: 2px;
-  background: var(--sec-bar);
-  opacity: .95;
-}
-
+/* bottom rule for “typeset” feeling */
 .page__content h2::after{
   content: "";
   position: absolute;
   left: 0;
   right: 0;
-  top: -10px;
+  bottom: -10px;
   height: 1px;
-  background: rgba(15,23,42,.06);
+  background: var(--sec-rule);
 }
 
+/* h3 */
 .page__content h3{
   margin: 1.2rem 0 .65rem 0;
-  font-weight: 900;
-  letter-spacing: -0.25px;
+  font-weight: 850;
+  letter-spacing: -0.2px;
   color: var(--text);
 }
 
+/* ---------- Icon system (Font Awesome 5) ----------
+   Works with:
+   <a id="about"></a>
+   ## About
+   ------------------------------------------------- */
+.page__content a[id] + h2{
+  position: relative;
+}
+
+/* icon (left) */
+.page__content a[id] + h2::before{
+  content: "\f15c"; /* default: file */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.45rem;
+  text-align: center;
+  color: var(--accent);
+  opacity: .95;
+}
+
+/* subtle separator line after icon */
+.page__content a[id] + h2::marker{ content: ""; } /* harmless guard */
+.page__content a[id] + h2{
+  /* add a tiny vertical separator via background to avoid ::after conflict */
+  background-image: linear-gradient(rgba(15,23,42,.10), rgba(15,23,42,.10));
+  background-size: 1px 56%;
+  background-repeat: no-repeat;
+  background-position: 2.25rem 50%;
+}
+
+/* Per-section mapping */
+.page__content a#about + h2::before{ content: "\f007"; }        /* user */
+.page__content a#contact + h2::before{ content: "\f0e0"; }      /* envelope */
+.page__content a#experience + h2::before{ content: "\f0b1"; }   /* briefcase */
+.page__content a#publications + h2::before{ content: "\f02d"; } /* book */
+.page__content a#projects + h2::before{ content: "\f121"; }     /* code */
+.page__content a#demo + h2::before{ content: "\f04b"; }         /* play */
+.page__content a#demos + h2::before{ content: "\f04b"; }        /* play */
+.page__content a#honors + h2::before{ content: "\f559"; }       /* award */
+.page__content a#education + h2::before{ content: "\f19d"; }    /* graduation-cap */
+.page__content a#visitors + h2::before{ content: "\f0ac"; }     /* globe */
+
 /* -------------------------------------------------
-   8) Hero card (top nav block) — scheme 2: NOT sticky
+   9) Hero card (top nav) — scheme 2: NOT sticky (scroll away)
    ------------------------------------------------- */
 .hero-card{
   border: 1px solid var(--border-soft);
@@ -184,17 +245,15 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 
-  /* Scheme 2: scroll away naturally */
+  /* Scheme 2: scroll away */
   position: static;
 }
 
-/* Hero subtitle line */
 .hero-card > div:first-child{
   color: var(--muted);
   font-weight: 650;
 }
 
-/* Hero icons */
 .hero-card i,
 .hero-card svg{
   color: var(--muted-2);
@@ -202,7 +261,7 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 }
 
 /* -------------------------------------------------
-   9) Pills (chip component)
+   10) Pills (chip component)
    ------------------------------------------------- */
 .pill{
   display: inline-flex;
@@ -226,7 +285,7 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 }
 
 /* -------------------------------------------------
-   10) Sidebar polish
+   11) Sidebar polish
    ------------------------------------------------- */
 .author__avatar img{
   border-radius: 16px;
@@ -246,7 +305,7 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 }
 
 /* -------------------------------------------------
-   11) Contact block (no card)
+   12) Contact block (no card)
    ------------------------------------------------- */
 .contact-block{
   margin: .5rem 0 1.25rem 0;
@@ -282,7 +341,7 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 .sep{ opacity: .30; }
 
 /* -------------------------------------------------
-   12) Publication list helper (optional)
+   13) Publication list helper (optional)
    ------------------------------------------------- */
 .pub-list{
   list-style: none;
@@ -297,7 +356,8 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 }
 
 /* -------------------------------------------------
-   13) Widgets: progress + back-to-top
+   14) Widgets: progress + back-to-top
+   (CSS only; JS insertion handled in your HTML/MD)
    ------------------------------------------------- */
 #scroll-progress{
   position: fixed;
@@ -344,7 +404,7 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 }
 
 /* -------------------------------------------------
-   14) Widgets: unified panels
+   15) Widgets: unified panels (visitor map etc.)
    ------------------------------------------------- */
 .widget-card{
   border: 1px solid var(--border);
@@ -372,7 +432,6 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 .widget-body{ margin-top: 0.8rem; }
 
 .widget-visitormap{ overflow: hidden; }
-
 .widget-visitormap .widget-body{
   display: flex;
   justify-content: center;
@@ -391,7 +450,7 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 }
 
 /* -------------------------------------------------
-   15) Demo cards (grid + thumbnails)
+   16) Demo cards (grid + thumbnails)
    ------------------------------------------------- */
 .demo-grid{
   display: grid;
@@ -407,8 +466,8 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
   background: var(--panel);
   box-shadow: var(--shadow-soft);
   text-decoration: none;
-  overflow: hidden;  /* ensures image follows radius */
-  padding: 0;        /* image edge-to-edge */
+  overflow: hidden;
+  padding: 0;
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 
@@ -466,6 +525,9 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
   line-height: 1.55;
 }
 
+/* -------------------------------------------------
+   17) Responsive tweaks
+   ------------------------------------------------- */
 @media (max-width: 768px){
   html{ font-size: 14.5px; }
 
@@ -477,124 +539,3 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 
   .demo-grid{ grid-template-columns: 1fr; }
 }
-
-/* =========================
-   Section headings (h2) - Print / Academic style
-   ========================= */
-
-:root{
-  --sec-text: rgba(15,23,42,.92);
-  --sec-border: rgba(15,23,42,.10);
-  --sec-rule: rgba(15,23,42,.08);
-  --sec-bar: var(--accent);
-  --sec-bg: rgba(47,111,235,.03);  /* 可改成 transparent 彻底无底色 */
-}
-
-.page__content h2{
-  margin: 2.0rem 0 0.9rem 0;
-
-  /* 竖条更靠近文字：关键就这两个值 */
-  padding: 0.55rem 0.9rem 0.55rem 1.15rem;
-
-  font-weight: 900;
-  letter-spacing: -0.25px;
-  color: var(--sec-text);
-
-  /* 去掉“卡片/玻璃/阴影” */
-  background: var(--sec-bg);
-  border: 1px solid var(--sec-border);
-  border-radius: 6px;       /* 你要纯矩形就改 0 */
-
-  box-shadow: none;
-  backdrop-filter: none;
-
-  position: relative;
-}
-
-/* 左侧竖条：更细、更贴近、更像排版元素 */
-.page__content h2::before{
-  content: "";
-  position: absolute;
-  left: 0.55rem;            /* ✅ 越大=竖条离文字越远；越小=越贴近 */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 4px;
-  height: 60%;
-  border-radius: 1px;
-  background: var(--sec-bar);
-}
-
-/* 底部细分割线：增加“高级排版感” */
-.page__content h2::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -10px;
-  height: 1px;
-  background: var(--sec-rule);
-}
-
-/* =========================
-   Section icons (auto by anchor id)
-   Works with: <a id="xxx"></a> ## Title
-   ========================= */
-
-/* 让 h2 支持图标前缀布局 */
-.page__content a[id] + h2{
-  position: relative;
-  padding-left: 2.4rem;  /* 给图标留位置：可调 2.2~2.6 */
-}
-
-/* 通用图标容器（默认） */
-.page__content a[id] + h2::before{
-  content: "\f15c"; /* 默认：file-alt（文档） */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  left: 0.85rem;       /* 图标离左边距离 */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.45rem;
-  text-align: center;
-  color: var(--accent);
-  opacity: .95;
-}
-
-/* （可选）图标后面再加一根极细竖线，增强“排版感” */
-.page__content a[id] + h2::after{
-  content: "";
-  position: absolute;
-  left: 2.25rem;
-  top: 22%;
-  height: 56%;
-  width: 1px;
-  background: rgba(15,23,42,.10);
-}
-
-/* ====== per-section icon mapping ====== */
-
-/* About */
-.page__content a#about + h2::before{ content: "\f007"; }        /* user */
-
-/* Contact */
-.page__content a#contact + h2::before{ content: "\f0e0"; }      /* envelope */
-
-/* Experience */
-.page__content a#experience + h2::before{ content: "\f0b1"; }   /* briefcase */
-
-/* Publications */
-.page__content a#publications + h2::before{ content: "\f02d"; } /* book */
-
-/* Projects */
-.page__content a#projects + h2::before{ content: "\f121"; }     /* code */
-
-/* Demos（你如果新增 demo section，用 id="demos" 或 id="demo"） */
-.page__content a#demos + h2::before{ content: "\f04b"; }        /* play */
-.page__content a#demo + h2::before{ content: "\f04b"; }
-
-/* Honors */
-.page__content a#honors + h2::before{ content: "\f559"; }       /* award */
-
-/* Education */
-.page__content a#education + h2::before{ content: "\f19d"; }    /* graduation-cap */
