@@ -469,3 +469,61 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
 
   .demo-grid{ grid-template-columns: 1fr; }
 }
+
+/* =========================
+   Section headings (h2) - Print / Academic style
+   ========================= */
+
+:root{
+  --sec-text: rgba(15,23,42,.92);
+  --sec-border: rgba(15,23,42,.10);
+  --sec-rule: rgba(15,23,42,.08);
+  --sec-bar: var(--accent);
+  --sec-bg: rgba(47,111,235,.03);  /* 可改成 transparent 彻底无底色 */
+}
+
+.page__content h2{
+  margin: 2.0rem 0 0.9rem 0;
+
+  /* 竖条更靠近文字：关键就这两个值 */
+  padding: 0.55rem 0.9rem 0.55rem 1.15rem;
+
+  font-weight: 900;
+  letter-spacing: -0.25px;
+  color: var(--sec-text);
+
+  /* 去掉“卡片/玻璃/阴影” */
+  background: var(--sec-bg);
+  border: 1px solid var(--sec-border);
+  border-radius: 6px;       /* 你要纯矩形就改 0 */
+
+  box-shadow: none;
+  backdrop-filter: none;
+
+  position: relative;
+}
+
+/* 左侧竖条：更细、更贴近、更像排版元素 */
+.page__content h2::before{
+  content: "";
+  position: absolute;
+  left: 0.55rem;            /* ✅ 越大=竖条离文字越远；越小=越贴近 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  border-radius: 1px;
+  background: var(--sec-bar);
+}
+
+/* 底部细分割线：增加“高级排版感” */
+.page__content h2::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 1px;
+  background: var(--sec-rule);
+}
+
