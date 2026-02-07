@@ -480,3 +480,28 @@ hr{
   opacity: .9;
 }
 
+/* =========================
+   Section headings (Option B)
+   ========================= */
+.page__content h2{
+  position: relative;
+  margin: 2.1rem 0 1.05rem 0;
+  padding: .55rem .85rem .55rem 1.05rem;
+  font-weight: 950;
+  letter-spacing: -0.35px;
+  border-radius: 14px;
+  background: rgba(47,111,235,.08);
+  border: 1px solid rgba(47,111,235,.18);
+}
+
+.page__content h2::before{
+  content: "";
+  position: absolute;
+  left: .55rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60%;
+  border-radius: 999px;
+  background: var(--accent);
+}
