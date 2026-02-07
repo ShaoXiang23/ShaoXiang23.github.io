@@ -527,3 +527,66 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
   background: var(--sec-rule);
 }
 
+/* =========================
+   Section icons (auto by anchor id)
+   Works with: <a id="xxx"></a> ## Title
+   ========================= */
+
+/* 让 h2 支持图标前缀布局 */
+.page__content a[id] + h2{
+  position: relative;
+  padding-left: 2.4rem;  /* 给图标留位置：可调 2.2~2.6 */
+}
+
+/* 通用图标容器（默认） */
+.page__content a[id] + h2::before{
+  content: "\f15c"; /* 默认：file-alt（文档） */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0.85rem;       /* 图标离左边距离 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.45rem;
+  text-align: center;
+  color: var(--accent);
+  opacity: .95;
+}
+
+/* （可选）图标后面再加一根极细竖线，增强“排版感” */
+.page__content a[id] + h2::after{
+  content: "";
+  position: absolute;
+  left: 2.25rem;
+  top: 22%;
+  height: 56%;
+  width: 1px;
+  background: rgba(15,23,42,.10);
+}
+
+/* ====== per-section icon mapping ====== */
+
+/* About */
+.page__content a#about + h2::before{ content: "\f007"; }        /* user */
+
+/* Contact */
+.page__content a#contact + h2::before{ content: "\f0e0"; }      /* envelope */
+
+/* Experience */
+.page__content a#experience + h2::before{ content: "\f0b1"; }   /* briefcase */
+
+/* Publications */
+.page__content a#publications + h2::before{ content: "\f02d"; } /* book */
+
+/* Projects */
+.page__content a#projects + h2::before{ content: "\f121"; }     /* code */
+
+/* Demos（你如果新增 demo section，用 id="demos" 或 id="demo"） */
+.page__content a#demos + h2::before{ content: "\f04b"; }        /* play */
+.page__content a#demo + h2::before{ content: "\f04b"; }
+
+/* Honors */
+.page__content a#honors + h2::before{ content: "\f559"; }       /* award */
+
+/* Education */
+.page__content a#education + h2::before{ content: "\f19d"; }    /* graduation-cap */
