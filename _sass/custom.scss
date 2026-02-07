@@ -457,59 +457,72 @@ hr{
 }
 
 /* =========================
-   Premium Section Headings
-   Apply to: Markdown "##" (h2)
+   Section headings (h2)
+   Rectangular + academic style
    ========================= */
 
-.page__content h2{
-  /* spacing rhythm */
-  margin: 2.2rem 0 1.0rem 0;
-  padding: 0.75rem 1.0rem 0.75rem 1.15rem;
-
-  /* type */
-  font-weight: 950;
-  letter-spacing: -0.35px;
-
-  /* card-like look */
-  border-radius: 14px;
-  background: rgba(47,111,235,.06);          /* uses your accent vibe */
-  border: 1px solid rgba(15,23,42,.08);
-
-  /* remove old underline style if any */
-  border-bottom: none;
-  position: relative;
+:root{
+  /* Section header tokens (can tweak) */
+  --sec-bg: rgba(47,111,235,.04);      /* very subtle */
+  --sec-border: rgba(15,23,42,.08);
+  --sec-text: rgba(15,23,42,.92);
+  --sec-bar: var(--accent);
 }
 
-/* left accent bar */
+.page__content h2{
+  margin: 2.1rem 0 1.0rem 0;
+
+  /* more breathing room on the left */
+  padding: 0.78rem 1.0rem 0.78rem 1.55rem;
+
+  /* typography */
+  font-weight: 950;
+  letter-spacing: -0.35px;
+  color: var(--sec-text);
+
+  /* rectangular look (set to 0 for hard rectangle) */
+  border-radius: 8px;                 /* ✅ 你想“正常矩形”就改成 0 */
+  background: var(--sec-bg);
+  border: 1px solid var(--sec-border);
+
+  /* remove old underline style */
+  border-bottom: 1px solid var(--sec-border);
+  position: relative;
+
+  /* subtle depth (more premium, but not "card") */
+  box-shadow: 0 6px 14px rgba(15,23,42,.05);
+}
+
+/* left accent bar: farther from title */
 .page__content h2::before{
   content: "";
   position: absolute;
-  left: 0.55rem;
+  left: 0.92rem;                      /* ✅ 增大距离：竖条离文字更远 */
   top: 50%;
   transform: translateY(-50%);
   width: 6px;
-  height: 62%;
-  border-radius: 999px;
-  background: var(--accent);
+  height: 58%;
+  border-radius: 2px;                 /* ✅ 竖条更“矩形” */
+  background: var(--sec-bar);
   opacity: .95;
 }
 
-/* subtle top divider line between sections (optional but classy) */
-.page__content h2{
-  box-shadow: 0 8px 18px rgba(15,23,42,.06);
+/* optional: small top rule for separation (clean academic vibe) */
+.page__content h2::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  height: 1px;
+  background: rgba(15,23,42,.06);
 }
 
-/* keep h3 clean but strong */
+/* keep h3 clean and strong */
 .page__content h3{
-  margin: 1.25rem 0 .65rem 0;
+  margin: 1.2rem 0 .65rem 0;
   font-weight: 900;
   letter-spacing: -0.25px;
 }
 
-/* If you feel h2 background is too obvious, reduce it */
-@media (prefers-color-scheme: light){
-  .page__content h2{
-    background: rgba(47,111,235,.045);
-  }
-}
 
