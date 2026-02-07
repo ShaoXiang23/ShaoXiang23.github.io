@@ -44,8 +44,6 @@ My research interests broadly include computer vision, machine learning, deep le
 - **3D Reconstruction/Underwater Stereo Matching/Robotics**
 - *(Recently exploring)* **speaker diarization** and audio representation learning
 
----
-
 <a id="contact"></a>
 ## Contact
 
@@ -59,8 +57,6 @@ My research interests broadly include computer vision, machine learning, deep le
 - **Code**:
   <a class="pill" href="https://github.com/ShaoXiang23" target="_blank" rel="noopener">GitHub</a>
 
----
-
 <a id="experience"></a>
 ## Experience
 
@@ -70,8 +66,6 @@ My research interests broadly include computer vision, machine learning, deep le
 - **Postdoctoral Research Associate**, National Robotarium (Heriot-Watt University & University of Edinburgh), Edinburgh, UK, **Sep 2024 – Aug 2025**  
   Advisor: Prof. Mustafa Suphi Erden  
   Collaborators: Prof. Mike J. Chantler, Prof. M. J. Daniel Esser, Dr. Richard M. Carter, Dr. Donald Risbridger
-
----
 
 <a id="publications"></a>
 ## Publications
@@ -164,8 +158,6 @@ My research interests broadly include computer vision, machine learning, deep le
   </li>
 
 </ul>
-
----
 
 <a id="demo"></a>
 ## Demo
@@ -263,8 +255,6 @@ My research interests broadly include computer vision, machine learning, deep le
 
 </div>
 
----
-
 <a id="projects"></a>
 
 ## Projects
@@ -273,8 +263,6 @@ My research interests broadly include computer vision, machine learning, deep le
 - Real-world laser resonator alignment system (coarse-to-fine regression + iterative refinement, hardware-in-the-loop experiments)
 - Monocular 3D hand mesh reconstruction framework (training-time geometric supervision; camera-space reconstruction)
 - *(Exploring)* speaker diarization pipelines and model reproduction for real-world audio
-
----
 
 <a id="honors"></a>
 ## Honors and Awards
@@ -289,8 +277,6 @@ My research interests broadly include computer vision, machine learning, deep le
 - Second Class Academic Scholarship, Ocean University of China, 2018–2019
 - Mobile Robotics Challenge, First Prize, ROS Summer School, Tsinghua University (Shenzhen), 2018
 - LiDAR Recognition Challenge, Second Prize, ROS Summer School, Tsinghua University (Shenzhen), 2018
-
----
 
 <a id="education"></a>
 ## Education
