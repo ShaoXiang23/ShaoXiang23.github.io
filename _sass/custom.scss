@@ -479,14 +479,14 @@ h1,h2,h3,h4{ letter-spacing: -0.2px; }
   --sec-border: rgba(15,23,42,.10);
   --sec-rule: rgba(15,23,42,.08);
   --sec-bar: var(--accent);
-  --sec-bg: transparent;  /* 可改成 transparent 彻底无底色 */
+  --sec-bg: rgba(47,111,235,.03);  /* 可改成 transparent 彻底无底色 */
 }
 
 .page__content h2{
   margin: 2.0rem 0 0.9rem 0;
 
   /* 竖条更靠近文字：关键就这两个值 */
-  padding: 1.15rem 0.9rem 0.55rem 1.15rem;
+  padding: 0.55rem 0.9rem 0.55rem 1.15rem;
 
   font-weight: 900;
   letter-spacing: -0.25px;
