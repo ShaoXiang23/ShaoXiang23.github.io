@@ -459,26 +459,26 @@ hr{
 /* =========================
    Section headings (Option A)
    ========================= */
-.page__content h2{
-  position: relative;
-  margin: 2.0rem 0 1.0rem 0;
-  padding-bottom: .55rem;
-  font-weight: 900;
-  letter-spacing: -0.3px;
-  border-bottom: 1px solid var(--border-soft);
-}
+// .page__content h2{
+//   position: relative;
+//   margin: 2.0rem 0 1.0rem 0;
+//   padding-bottom: .55rem;
+//   font-weight: 900;
+//   letter-spacing: -0.3px;
+//   border-bottom: 1px solid var(--border-soft);
+// }
 
-.page__content h2::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 64px;
-  height: 3px;
-  border-radius: 999px;
-  background: var(--accent);
-  opacity: .9;
-}
+// .page__content h2::after{
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: -1px;
+//   width: 64px;
+//   height: 3px;
+//   border-radius: 999px;
+//   background: var(--accent);
+//   opacity: .9;
+// }
 
 /* =========================
    Section headings (Option B)
