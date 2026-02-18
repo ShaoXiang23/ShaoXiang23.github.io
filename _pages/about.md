@@ -84,7 +84,7 @@ My research interests broadly include computer vision, machine learning, deep le
   <li>
     <b>Shaoxiang Guo</b>* , Qing Cai, Wankun Chen, Jingyi Sun, Junyu Dong, Hui Yu.<br>
     “Pseudo Stereo for Camera Space Hand Pose and Shape Estimation from Monocular Image.”<br>
-    Knowledge-Based Systems <b>(KBS)</b>, <b>2025</b>. (In Revision)
+    Knowledge-Based Systems <b>(KBS)</b>, <b>2025</b>. (SCI Q1, Top, Latest IF=7.6)
     <!-- <a href="">[PDF]</a> <a href="">[Code]</a> -->
   </li>
 
